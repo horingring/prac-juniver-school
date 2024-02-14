@@ -1,3 +1,124 @@
-a {
-  font-size: 2em;
+* {
+  color: black;
 }
+
+/* 공통 */
+html,
+body,
+#app {
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blind {
+  overflow: hidden !important;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+}
+
+/* 헤더 S */
+.header {
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16);
+  width: 100%;
+  /* position: fixed; */
+}
+.header__nav {
+  width: 1062px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* 헤더__로고 S */
+.header__logoHeading {
+  width: 252px;
+  background: url('@/assets/img/common/gnb/logo_pc.png');
+  background-size: 252px auto;
+  margin-top: 17px;
+}
+.header__logoLink {
+  display: block;
+  width: 170px;
+  height: 54px;
+}
+/* 헤더__로고 E */
+
+/* 헤더__gnb S */
+.header__gnbList {
+  gap: 18px;
+}
+.header__gnbList--onSub {
+  padding-bottom: 109px;
+}
+.header__gnbItem {
+  position: relative;
+}
+.header__gnbItemLink {
+  position: relative;
+  width: 162px;
+  height: 88px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header__gnbItemLink--on {
+  color: #ffcd03;
+}
+.header__gnbItemLink--on::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  background-color: #ffcd03;
+}
+.header__gnbSubList {
+  position: absolute;
+  top: 88px;
+  height: 109px;
+}
+.header__gnbSubList.curriculum {
+  transform: translate(calc(-405px + 81px), 0);
+}
+.header__gnbSubItemLink {
+  box-sizing: border-box;
+  width: 162px;
+  height: 54px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+}
+.header__gnbSubList.curriculum .header__gnbSubItemLink {
+  padding-left: 73px;
+  padding-right: 32px;
+}
+.header__gnbSubList.curriculum .header__gnbSubItemLink--1 {
+  background: url('@/assets/img/common/gnb/nav_link_sub_01.png') no-repeat 34px
+    50%/35px 28px;
+}
+.header__gnbSubList.curriculum .header__gnbSubItemLink--2 {
+  background: url('@/assets/img/common/gnb/nav_link_sub_02.png') no-repeat 34px
+    50%/35px 28px;
+}
+.header__gnbSubList.curriculum .header__gnbSubItemLink--3 {
+  background: url('@/assets/img/common/gnb/nav_link_sub_03.png') no-repeat 34px
+    50%/35px 28px;
+}
+.header__gnbSubList.curriculum .header__gnbSubItemLink--4 {
+  background: url('@/assets/img/common/gnb/nav_link_sub_04.png') no-repeat 34px
+    50%/35px 28px;
+}
+.header__gnbSubList.curriculum .header__gnbSubItemLink--5 {
+  background: url('@/assets/img/common/gnb/nav_link_sub_05.png') no-repeat 34px
+    50%/35px 28px;
+}
+/* 헤더__gnb E */
+/* 헤더 E */

@@ -1,10 +1,15 @@
 <template>
-  <ul>
+  <ul
+    class="header__gnbList flex-center"
+    :class="{ 'header__gnbList--onSub': onSub }"
+    @mouseleave="onMouseLeave"
+  >
     <GnbItem v-for="item in gnbList" :key="item.id" :item="item" />
   </ul>
 </template>
 
 <script>
+import { mapMutations, mapState } from 'vuex';
 import GnbItem from './GnbItem.vue';
 
 export default {
@@ -37,7 +42,7 @@ export default {
           text: '워크북',
           subItems: [
             { id: 1, param: 'level1', text: '1단계' },
-            { id: 1, param: 'level2', text: '2단계' },
+            { id: 2, param: 'level2', text: '2단계' },
           ],
         },
         {
@@ -48,6 +53,30 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    ...mapState('common', ['hoveredGnb']),
+    urlPath() {
+      return this.$route.path;
+    },
+    onSub() {
+      // gnbItem이 1.선택되었거나, 2.hover 되어있어야 한다.
+      // 1. gnbItem 선택 여부 확인
+      const selectedGnb = this.gnbList.find((v) =>
+        v.to?.includes(this.urlPath)
+      );
+      const onSubBySelected = selectedGnb?.subItems?.length > 0;
+      // 2. gnbItem hover 여부 확인
+      const onSubByHovered = this.hoveredGnb?.subItems?.length > 0;
+
+      return onSubBySelected || onSubByHovered;
+    },
+  },
+  methods: {
+    ...mapMutations('common', ['setHoveredGnb']),
+    onMouseLeave() {
+      this.setHoveredGnb(null);
+    },
   },
 };
 </script>

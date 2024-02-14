@@ -1,6 +1,6 @@
 <template>
-  <header>
-    <nav>
+  <header class="header flex-center">
+    <nav class="header__nav flex-center">
       <GnbLogo />
       <GnbList />
     </nav>

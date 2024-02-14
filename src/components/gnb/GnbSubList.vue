@@ -13,7 +13,7 @@
       class="header__gnbSubItem"
     >
       <router-link
-        :to="`${parent.to}?${subItem.param}`"
+        :to="`${parent.to}?t=${subItem.param}`"
         class="header__gnbSubItemLink flex-center"
         :class="[`header__gnbSubItemLink--${subItem.id}`]"
         >{{ subItem.text }}</router-link

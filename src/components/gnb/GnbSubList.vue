@@ -11,6 +11,10 @@
       v-for="subItem in subItems"
       :key="subItem.id"
       class="header__gnbSubItem"
+      :class="{
+        'header__gnbSubItem--on': urlQuery.t == subItem.param,
+        level1: urlQuery.t == 'level1',
+      }"
     >
       <router-link
         :to="`${parent.to}?t=${subItem.param}`"
@@ -39,6 +43,9 @@ export default {
     ...mapState('common', ['hoveredGnb']),
     urlPath() {
       return this.$route.path;
+    },
+    urlQuery() {
+      return this.$route.query;
     },
   },
   methods: {

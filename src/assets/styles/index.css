@@ -30,6 +30,12 @@ body,
   width: 100%;
   /* position: fixed; */
 }
+.header--yellow {
+  background-color: #fffbee;
+}
+.header--skyblue {
+  background-color: #f9fafd;
+}
 .header__nav {
   width: 1062px;
   display: flex;
@@ -88,7 +94,19 @@ body,
 .header__gnbSubList.curriculum {
   transform: translate(calc(-405px + 81px), 0);
 }
+.header__gnbSubItem {
+  color: #555;
+}
+.header__gnbSubItem--on {
+  color: black;
+  background-color: #f2f6fc;
+  border-radius: 100px;
+}
+.header__gnbSubList.workbook .header__gnbSubItem--on.level1 {
+  background-color: #ffe990;
+}
 .header__gnbSubItemLink {
+  color: inherit;
   box-sizing: border-box;
   width: 162px;
   height: 54px;

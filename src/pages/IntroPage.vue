@@ -1,7 +1,15 @@
 <template>
-  <main>Intro 페이지</main>
+  <main class="introPage">
+    <IntroSection />
+  </main>
 </template>
 
 <script>
-export default {};
+import IntroSection from '@/components/IntroPage/Intro/IntroSection.vue';
+
+export default {
+  components: {
+    IntroSection,
+  },
+};
 </script>

@@ -13,37 +13,33 @@ const routes = [
     path: '/curriculum',
     name: 'Curriculum',
     component: CurriculumPage,
-    beforeEnter: (to, from, next) => {
-      if (!Object.prototype.hasOwnProperty.call(to.query, 't')) {
-        next({
-          path: '/curriculum',
-          query: { t: 'math' },
-        });
-      } else {
-        next();
-      }
-    },
   },
   {
     path: '/workbook',
     name: 'Workbook',
     component: WorkBookPage,
-    beforeEnter: (to, from, next) => {
-      if (!Object.prototype.hasOwnProperty.call(to.query, 't')) {
-        next({
-          path: '/workbook',
-          query: { t: 'level1' },
-        });
-      } else {
-        next();
-      }
-    },
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  // default 쿼리로 t=... 를 준다
+  if (to.name === 'Curriculum' && !to.query.t) {
+    return next({
+      path: '/curriculum',
+      query: { t: 'math' },
+    });
+  } else if (to.name === 'Workbook' && !to.query.t) {
+    return next({
+      path: '/workbook',
+      query: { t: 'level1' },
+    });
+  }
+  next();
 });
 
 export default router;

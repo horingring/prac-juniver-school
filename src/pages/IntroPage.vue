@@ -1,5 +1,5 @@
 <template>
-  <main class="introPage">
+  <main id="introPage">
     <IntroSection />
   </main>
 </template>

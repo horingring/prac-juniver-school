@@ -1,8 +1,8 @@
+/*** 공통 S ***/
 * {
   color: black;
 }
 
-/* 공통 */
 html,
 body,
 #app {
@@ -22,8 +22,9 @@ body,
   height: 1px !important;
   margin: -1px !important;
 }
+/*** 공통 E ***/
 
-/* 헤더 S */
+/*** 헤더 S ***/
 .header {
   position: fixed;
   z-index: 100;
@@ -141,13 +142,11 @@ body,
     50%/35px 28px;
 }
 /* 헤더__gnb E */
-/* 헤더 E */
+/*** 헤더 E ***/
 
-/* 인트로 페이지 */
-.introPage {
-}
-/* 인트로 페이지__introSec */
-.introSec {
+/*** 인트로 페이지 ***/
+/* 인트로 페이지__introSec S */
+#introPage .introSec {
   position: relative;
   box-sizing: border-box;
   padding-top: 94px;
@@ -156,7 +155,7 @@ body,
     no-repeat 50% 0/2048px 1080px;
   overflow: hidden;
 }
-.introSec::after {
+#introPage .introSec::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -166,7 +165,7 @@ body,
   height: 240px;
   background: url('@/assets/img/IntroPage/intro/spot_gradient_tb.png');
 }
-.introSec__inner {
+#introPage .introSec__inner {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -177,11 +176,11 @@ body,
   margin: 0 auto;
   padding-top: 220px;
 }
-.introSec__bgSlide {
+#introPage .introSec__bgSlide {
   position: absolute;
   z-index: 10;
   margin-left: 110px;
-  left: -47%;
+  left: 50%;
   top: 70px;
   width: 2295px;
   height: 1201px;
@@ -190,27 +189,31 @@ body,
   -webkit-transition: transform 1s;
   transition: transform 1s;
 }
-.introSec__titleBox {
+#introPage .introSec__bgSlide--on {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#introPage .introSec__titleBox {
   font-size: 32px;
   font-weight: bold;
   letter-spacing: -1.28px;
 }
-.introSec__titleImg {
+#introPage .introSec__titleImg {
   width: 432px;
   height: 101px;
   margin-top: 25px;
 }
-.introSec__desc1 {
+#introPage .introSec__desc1 {
   margin-top: 40px;
   letter-spacing: -1.28px;
   line-height: 48px;
   font-size: 32px;
   color: #6c7683;
 }
-.introSec__desc2Box {
+#introPage .introSec__desc2Box {
   position: relative;
 }
-.introSec__desc2 {
+#introPage .introSec__desc2 {
   margin-top: 28px;
   display: block;
   width: fit-content;
@@ -222,7 +225,7 @@ body,
   border-radius: 8px;
   font-size: 22px;
 }
-.introSec__desc2::after {
+#introPage .introSec__desc2::after {
   content: '';
   position: relative;
   top: 3px;
@@ -233,7 +236,7 @@ body,
   background: url('@/assets/img/IntroPage/intro/ico_notice.png');
   background-size: 24px 24px;
 }
-.introSec__desc2Sub {
+#introPage .introSec__desc2Sub {
   position: absolute;
   top: 100%;
   box-sizing: border-box;
@@ -245,17 +248,20 @@ body,
   font-size: 20px;
   letter-spacing: -2.7px;
   line-height: 1.7;
+  z-index: 25;
 }
-.introSec__desc2Sub strong {
+#introPage .introSec__desc2Sub strong {
   font-weight: bold;
 }
-.introSec__downBtnBox {
+#introPage .introSec__downBtnBox {
   position: relative;
+  box-sizing: border-box;
   margin-top: 46px;
-}
-.introSec__dropdownBtn {
-  display: block;
   width: 169px;
+}
+#introPage .introSec__dropdownBtn {
+  display: block;
+  width: 100%;
   height: 79px;
   font-size: 28px;
   letter-spacing: -2.12px;
@@ -267,7 +273,62 @@ body,
   border-radius: 12px;
   cursor: pointer;
 }
-.introSec__toDownBtn {
+#introPage .introSec__dropdownBtn--hover {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.32);
+}
+#introPage .introSec__downBtnList {
+  position: absolute;
+  top: 100%;
+  box-sizing: border-box;
+  width: 169px;
+  padding: 13px 18px 24px;
+  background-color: #232323;
+  border-radius: 0 0 12px 12px;
+}
+#introPage .introSec__downBtnList > li {
+  position: relative;
+  border-radius: 6px;
+}
+#introPage .introSec__downBtnList > li:not(:nth-child(1)) {
+  margin-top: 12px;
+}
+#introPage .introSec__downBtnList > li:nth-last-child(1) {
+  margin-top: 20px;
+}
+#introPage .introSec__downBtn {
+  display: block;
+  height: 45px;
+  position: relative;
+  z-index: 10;
+}
+#introPage .introSec__downBtn::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+#introPage .introSec__downBtn:hover::after {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+#introPage .introSec__downBtn.google {
+  background: url('@/assets/img/IntroPage/intro/ico_google_play.png') no-repeat
+    50% 50%/115px 28px;
+}
+#introPage .introSec__downBtn.apple {
+  background: url('@/assets/img/IntroPage/intro/ico_app_store.png') no-repeat
+    50% 50%/112px 29px;
+}
+#introPage .introSec__qrImg {
+  width: 100%;
+  height: auto;
+}
+#introPage .introSec__toDownBtn {
   align-self: center;
   position: absolute;
   bottom: 69px;
@@ -283,3 +344,5 @@ body,
   box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
+/* 인트로 페이지__introSec E */
+/*** 인트로 페이지 E ***/

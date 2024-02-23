@@ -3,10 +3,38 @@
   color: black;
 }
 
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('@/assets/fonts/NanumSquareRoundL.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('@/assets/fonts/NanumSquareRoundR.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('@/assets/fonts/NanumSquareRoundB.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('@/assets/fonts/NanumSquareRoundEB.ttf') format('truetype');
+  font-weight: 900;
+}
+
 html,
 body,
 #app {
   width: 100%;
+  font-family: 'NanumSquareRound', '-apple-system', 'BlinkMacSystemFont',
+    'SFProDisplay', 'AppleSDGothicNeo', 'HelveticaNeue', 'Helvetica', arial,
+    'sans-serif';
+  font-weight: 500;
 }
 
 .flex-center {
@@ -75,7 +103,7 @@ body,
   width: 162px;
   height: 88px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 900;
 }
 .header__gnbItemLink--on {
   color: #ffcd03;
@@ -114,7 +142,7 @@ body,
   width: 162px;
   height: 54px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: -0.6px;
 }
 .header__gnbSubList.curriculum .header__gnbSubItemLink {
@@ -195,7 +223,7 @@ body,
 }
 #introPage .introSec__titleBox {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: -1.28px;
 }
 #introPage .introSec__titleImg {
@@ -251,7 +279,7 @@ body,
   z-index: 25;
 }
 #introPage .introSec__desc2Sub strong {
-  font-weight: bold;
+  font-weight: 900;
 }
 #introPage .introSec__downBtnBox {
   position: relative;
@@ -265,7 +293,7 @@ body,
   height: 79px;
   font-size: 28px;
   letter-spacing: -2.12px;
-  font-weight: bold;
+  font-weight: 900;
   color: white;
   background-color: #232323;
   text-align: center;
@@ -345,4 +373,120 @@ body,
   cursor: pointer;
 }
 /* 인트로 페이지__introSec E */
+
+/* 인트로 페이지__rcmdSec S */
+.rcmdSec {
+  background: url('@/assets/img/IntroPage/recommend/jr-pc-section-1.png') #fff
+    no-repeat 50% 180px/1548px 327px;
+}
+.rcmdSec__intro {
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.rcmdSec__title {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 40px;
+  line-height: 60px;
+  letter-spacing: -2.5px;
+}
+.rcmdSec__title > span {
+  position: relative;
+}
+.rcmdSec__title > span .text {
+  position: relative;
+  z-index: 10;
+}
+.rcmdSec__title > span::after {
+  position: absolute;
+  z-index: 5;
+  bottom: -6px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #ffcd03;
+  border-radius: 4px;
+}
+.rcmdSec__awardsImg {
+  width: 860px;
+  height: auto;
+}
+
+.swiper {
+  margin: 20px auto 120px;
+  width: 100%;
+  height: 245px;
+}
+.rcmdSec .swiper-slide {
+  width: 340px;
+}
+.rcmdSec__card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 210px;
+  padding: 30px 36px 26px 30px;
+  background-color: #e9ebf1;
+  border-radius: 20px;
+  -webkit-transition-property: margin;
+  transition-property: margin;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.swiper-slide-prev .rcmdSec__card,
+.swiper-slide-next .rcmdSec__card {
+  margin: 35px auto 0;
+}
+.rcmdSec__card .text {
+  font-size: 24px;
+  color: #a3a3b5;
+  font-weight: 900;
+  line-height: 34px;
+  letter-spacing: -0.96px;
+}
+.rcmdSec__card .name {
+  margin-top: 28px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.72px;
+  color: rgba(163, 163, 181, 0.5);
+}
+.swiper-slide-active .rcmdSec__card {
+  background-color: #fff8e3;
+  border: 3px solid #ffab31;
+}
+.swiper-slide-active .rcmdSec__card .text {
+  color: #ffab31;
+}
+.swiper-slide-active .rcmdSec__card .name {
+  color: rgba(255, 171, 49, 0.5);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 24px);
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  -webkit-box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+.swiper-button-prev {
+  background: url('@/assets/img/IntroPage/recommend/icon-90-arrow-left-gray.png')
+    #fff no-repeat 50% 50%/28px auto;
+  left: 35px;
+}
+.swiper-button-next {
+  background: url('@/assets/img/IntroPage/recommend/icon-90-arrow-right-gray.png')
+    #fff no-repeat 50% 50%/28px auto;
+  right: 35px;
+}
+/* 인트로 페이지__rcmdSec E */
 /*** 인트로 페이지 E ***/

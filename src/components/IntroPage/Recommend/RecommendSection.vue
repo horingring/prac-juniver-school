@@ -23,82 +23,77 @@
         </ul>
       </div>
     </div>
-    <Swiper
-      :modules="[navigation]"
-      :slides-per-view="'auto'"
-      :space-between="30"
+    <JrSwiper
       :navigation="true"
-      :loop="true"
-      :centeredSlides="true"
+      :slides-per-view="'auto'"
+      loop
       :autoplay="{ delay: 3000 }"
-      :initial-slide="0"
+      :space-between="30"
+      centeredSlides
     >
-      <SwiperSlide>
-        <div class="rcmdSec__card">
-          <p class="text">집콕육아에 빛이 되어주는 학습 앱</p>
-          <p class="name">- 인스타그램 syu****님 -</p>
-        </div>
+      <SwiperSlide v-for="comment in comments" :key="comment.id">
+        <SlideCard :text="comment.text" :name="comment.name" />
       </SwiperSlide>
-      <SwiperSlide>
-        <div class="rcmdSec__card">
-          <p class="text">집콕육아에 빛이 되어주는 학습 앱</p>
-          <p class="name">- 인스타그램 syu****님 -</p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div class="rcmdSec__card">
-          <p class="text">집콕육아에 빛이 되어주는 학습 앱</p>
-          <p class="name">- 인스타그램 syu****님 -</p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div class="rcmdSec__card">
-          <p class="text">집콕육아에 빛이 되어주는 학습 앱</p>
-          <p class="name">- 인스타그램 syu****님 -</p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div class="rcmdSec__card">
-          <p class="text">집콕육아에 빛이 되어주는 학습 앱</p>
-          <p class="name">- 인스타그램 syu****님 -</p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div class="rcmdSec__card">
-          <p class="text">집콕육아에 빛이 되어주는 학습 앱</p>
-          <p class="name">- 인스타그램 syu****님 -</p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div class="rcmdSec__card">
-          <p class="text">집콕육아에 빛이 되어주는 학습 앱</p>
-          <p class="name">- 인스타그램 syu****님 -</p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div class="rcmdSec__card">
-          <p class="text">집콕육아에 빛이 되어주는 학습 앱</p>
-          <p class="name">- 인스타그램 syu****님 -</p>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+    </JrSwiper>
   </section>
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
+import JrSwiper from '@/components/common/swiper/JrSwiper.vue';
+import { SwiperSlide } from 'swiper/vue';
+import SlideCard from './slideCard.vue';
 
 export default {
   components: {
-    Swiper,
+    JrSwiper,
     SwiperSlide,
+    SlideCard,
   },
-  computed: {
-    navigation() {
-      return Navigation;
-    },
+  data() {
+    return {
+      comments: [
+        {
+          id: 0,
+          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
+          name: '스마트앱어워드 심사평',
+        },
+        {
+          id: 1,
+          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
+          name: '스마트앱어워드 심사평',
+        },
+        {
+          id: 2,
+          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
+          name: '스마트앱어워드 심사평',
+        },
+        {
+          id: 3,
+          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
+          name: '스마트앱어워드 심사평',
+        },
+        {
+          id: 4,
+          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
+          name: '스마트앱어워드 심사평',
+        },
+        {
+          id: 5,
+          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
+          name: '스마트앱어워드 심사평',
+        },
+        {
+          id: 6,
+          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
+          name: '스마트앱어워드 심사평',
+        },
+        {
+          id: 7,
+          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
+          name: '스마트앱어워드 심사평',
+        },
+      ],
+    };
   },
 };
 </script>

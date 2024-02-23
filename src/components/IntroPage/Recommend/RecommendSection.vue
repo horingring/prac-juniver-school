@@ -23,7 +23,11 @@
         </ul>
       </div>
     </div>
+    <p class="rcmdSec__spinner" v-if="isLoading && comments.length < 1">
+      로딩중...
+    </p>
     <JrSwiper
+      v-else
       :navigation="true"
       :slides-per-view="'auto'"
       loop
@@ -42,6 +46,7 @@
 import JrSwiper from '@/components/common/swiper/JrSwiper.vue';
 import { SwiperSlide } from 'swiper/vue';
 import SlideCard from './slideCard.vue';
+import client from 'api-client';
 
 export default {
   components: {
@@ -51,49 +56,19 @@ export default {
   },
   data() {
     return {
-      comments: [
-        {
-          id: 0,
-          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
-          name: '스마트앱어워드 심사평',
-        },
-        {
-          id: 1,
-          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
-          name: '스마트앱어워드 심사평',
-        },
-        {
-          id: 2,
-          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
-          name: '스마트앱어워드 심사평',
-        },
-        {
-          id: 3,
-          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
-          name: '스마트앱어워드 심사평',
-        },
-        {
-          id: 4,
-          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
-          name: '스마트앱어워드 심사평',
-        },
-        {
-          id: 5,
-          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
-          name: '스마트앱어워드 심사평',
-        },
-        {
-          id: 6,
-          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
-          name: '스마트앱어워드 심사평',
-        },
-        {
-          id: 7,
-          text: '학습을 놀이로 착각할 정도로 유아동을 위한 배려가 눈에 띈다',
-          name: '스마트앱어워드 심사평',
-        },
-      ],
+      isLoading: true,
+      comments: [],
     };
+  },
+  created() {
+    this.fetchRcmdComments();
+  },
+  methods: {
+    async fetchRcmdComments() {
+      const comments = await client.fetchRcmdComments();
+      this.comments = comments;
+      this.isLoading = false;
+    },
   },
 };
 </script>

@@ -416,6 +416,17 @@ body,
   height: auto;
 }
 
+.rcmdSec__spinner {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 245px;
+  line-height: 245px;
+  background-color: lightgray;
+  margin: 20px auto 120px;
+  font-size: 25px;
+}
+
 .swiper {
   margin: 20px auto 120px;
   width: 100%;

@@ -1,9 +1,9 @@
 <template>
   <Swiper
     :class="vClass"
-    :modules="[navigationModule]"
+    :modules="[navigationModule, autoplayModule]"
     :slides-per-view="slidesPerView"
-    :initial-slide="initialSlide"
+    :initial-slide="0"
     :loop="loop"
     :autoplay="autoplay"
     :space-between="spaceBetween"
@@ -16,7 +16,7 @@
 
 <script>
 import { Swiper } from 'swiper/vue';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 export default {
@@ -68,6 +68,9 @@ export default {
   computed: {
     navigationModule() {
       return Navigation;
+    },
+    autoplayModule() {
+      return Autoplay;
     },
   },
 };

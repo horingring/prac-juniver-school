@@ -1,6 +1,7 @@
 /*** 공통 S ***/
 * {
   color: black;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -60,6 +61,12 @@ body,
   -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16);
   width: 100%;
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+.header--hide {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 .header--yellow {
   background-color: #fffbee;

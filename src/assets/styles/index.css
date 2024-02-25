@@ -434,7 +434,8 @@ body,
   font-size: 25px;
 }
 
-.swiper {
+/* 인트로 페이지__rcmdSec__스와이퍼 S */
+.rcmdSec .swiper {
   margin: 20px auto 120px;
   width: 100%;
   height: 245px;
@@ -457,8 +458,8 @@ body,
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-.swiper-slide-prev .rcmdSec__card,
-.swiper-slide-next .rcmdSec__card {
+.rcmdSec .swiper-slide-prev .rcmdSec__card,
+.rcmdSec .swiper-slide-next .rcmdSec__card {
   margin: 35px auto 0;
 }
 .rcmdSec__card .text {
@@ -507,5 +508,96 @@ body,
     #fff no-repeat 50% 50%/28px auto;
   right: 35px;
 }
+/* 인트로 페이지__rcmdSec__스와이퍼 E */
 /* 인트로 페이지__rcmdSec E */
+
+/* 인트로 페이지__effectSec S */
+.effectSec {
+  padding: 120px 0 300px;
+}
+.effectSec__inner {
+  width: 1062px;
+  text-align: center;
+  margin: 0 auto;
+}
+.effectSec__title {
+  font-size: 48px;
+  font-weight: 900;
+}
+.effectSec__titleSub {
+  font-size: 30px;
+  color: #555;
+  font-weight: 700;
+  margin: 32px 0 40px;
+}
+.effectSec__figImg {
+  width: 1062px;
+  height: 764px;
+  margin-bottom: 64px;
+}
+
+.effectSec__accordion {
+  width: 800px;
+  margin: 0 auto;
+}
+.effectSec__accordionBtn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 67px;
+  background-color: #f3f5fb;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.effectSec__accordionBtn > strong {
+  color: #6c768e;
+  font-size: 30px;
+  font-weight: 900;
+}
+.effectSec__accordionBtn::after {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 32px;
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('@/assets/img/IntroPage/effect/icon-80-dropdown.png')
+    transparent no-repeat 50% 50%/40px 40px;
+  transform: rotate(180deg);
+}
+.effectSec__accordion--on .effectSec__accordionBtn {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.effectSec__accordion--on .effectSec__accordionBtn::after {
+  transform: rotate(0deg);
+}
+
+.effectSec__accordionBody {
+  width: 100%;
+  background-color: #fcfcfc;
+  font-size: 22px;
+  border-top: 2px solid #d8dded;
+}
+.effectSec__accordionBody * {
+  color: #555;
+}
+.effectSec__accordionBody .accordion-item {
+  text-align: start;
+  padding: 24px 32px;
+  line-height: 38px;
+}
+.effectSec__accordionBody .accordion-item:not(:nth-last-child(1)) {
+  border-bottom: 2px solid #f3f5fb;
+}
+.effectSec__accordionBody .study-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.effectSec__accordionBody .study-list li {
+  display: flex;
+}
+
+/* 인트로 페이지__effectSec E */
 /*** 인트로 페이지 E ***/

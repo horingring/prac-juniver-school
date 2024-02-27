@@ -34,7 +34,7 @@
       centeredSlides
     >
       <SwiperSlide v-for="comment in comments" :key="comment.id">
-        <SlideCard :text="comment.text" :name="comment.name" />
+        <SlideRcmdCard :text="comment.text" :name="comment.name" />
       </SwiperSlide>
     </JrSwiper>
   </section>
@@ -43,7 +43,7 @@
 <script>
 import JrSwiper from '@/components/common/swiper/JrSwiper.vue';
 import { SwiperSlide } from 'swiper/vue';
-import SlideCard from './slideCard.vue';
+import SlideRcmdCard from './SlideRcmdCard.vue';
 import StrongSpan from '@/components/common/ui/StrongSpan.vue';
 import client from 'api-client';
 
@@ -51,7 +51,7 @@ export default {
   components: {
     JrSwiper,
     SwiperSlide,
-    SlideCard,
+    SlideRcmdCard,
     StrongSpan,
   },
   data() {

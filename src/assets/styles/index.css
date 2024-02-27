@@ -675,4 +675,91 @@ body,
 }
 /* 인트로 페이지__cpsSec E */
 
+/* 인트로 페이지__cmtSec S */
+.cmtSec {
+  padding: 220px 0 60px;
+}
+.cmtSec__title {
+  padding-bottom: 80px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 66px;
+}
+/* 인트로 페이지__cmtSec__스와이퍼 S */
+.cmtSec .swiper {
+  height: 658px;
+}
+.cmtSec .swiper-slide {
+  width: 882px;
+}
+.cmtSec .swiper-button-prev {
+  background: url('@/assets/img/IntroPage/recommend/icon-90-arrow-left-gray.png')
+    #fff no-repeat 50% 50%/28px auto;
+  top: 155px;
+  left: 35px;
+}
+.cmtSec .swiper-button-next {
+  background: url('@/assets/img/IntroPage/recommend/icon-90-arrow-right-gray.png')
+    #fff no-repeat 50% 50%/28px auto;
+  top: 155px;
+  right: 35px;
+}
+.cmtSec__card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  -webkit-transition-property: margin;
+  transition-property: margin;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  font-size: 32px;
+  font-weight: 700;
+}
+.cmtSec .swiper-slide-prev .cmtSec__card {
+  margin: 48px auto 0;
+}
+.cmtSec .swiper-slide-next .cmtSec__card {
+  margin: 144px auto 0;
+}
+.cmtSec__cardTextBox {
+  width: 882px;
+  min-height: 350px;
+  box-sizing: border-box;
+  padding: 48px 40px 48px 48px;
+  margin-bottom: 48px;
+  background-color: #f2f5fb;
+  border-radius: 50px;
+  border-bottom-left-radius: 0;
+}
+.cmtSec__card .text {
+  color: #1d3764;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+}
+.cmtSec__card .text:not(:nth-last-child(1)) {
+  margin-bottom: 20px;
+}
+.cmtSec__cardWriterBox {
+  display: flex;
+  letter-spacing: -1.28px;
+}
+.cmtSec__card .writer {
+  display: block;
+  color: #1d3764;
+  font-weight: 900;
+  box-sizing: border-box;
+  width: 360px;
+  padding: 0 48px;
+}
+.cmtSec__card .department {
+  display: block;
+  color: #1d3764;
+  line-height: 1.5;
+}
+/* 인트로 페이지__cmtSec__스와이퍼 E */
+/* 인트로 페이지__cmtSec E */
+
 /*** 인트로 페이지 E ***/

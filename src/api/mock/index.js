@@ -1,4 +1,5 @@
-import comments from './data/IntroPage/rcmdComments';
+import rcmdComments from './data/IntroPage/rcmdComments';
+import introComments from './data/IntroPage/introComments';
 
 const fetch = (mockData, time = 0) => {
   return new Promise((resolve) => {
@@ -9,6 +10,9 @@ const fetch = (mockData, time = 0) => {
 };
 export default {
   fetchRcmdComments() {
-    return fetch(comments, 3000); // wait 1s before returning posts
+    return fetch(rcmdComments, 3000); // wait 1s before returning posts
+  },
+  fetchIntroComments() {
+    return fetch(introComments, 3000);
   },
 };

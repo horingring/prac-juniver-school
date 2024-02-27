@@ -51,6 +51,26 @@ body,
   height: 1px !important;
   margin: -1px !important;
 }
+
+.strongBox {
+  position: relative;
+}
+.strongBox > .strongBox__text {
+  position: relative;
+  z-index: 10;
+}
+.strongBox > .strongBox__underline {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: -6px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #ffcd03;
+  border-radius: 4px;
+}
 /*** 공통 E ***/
 
 /*** 헤더 S ***/
@@ -598,6 +618,73 @@ body,
 .effectSec__accordionBody .study-list li {
   display: flex;
 }
-
 /* 인트로 페이지__effectSec E */
+
+/* 인트로 페이지__cpsSec S */
+.cpsSec {
+  height: 1652px;
+  margin: 0 auto;
+  background: url('@/assets/img/IntroPage/composition/jr-pc-consist-bg_v2.png')
+    #fff no-repeat 50% center/2048px 1652px;
+}
+.cpsSec__inner {
+  text-align: center;
+  width: 1062px;
+  padding: 344px 0 0;
+  margin: 0 auto;
+}
+.cpsSec__title {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.96px;
+  line-height: 60px;
+}
+.cpsSec__nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 86px;
+}
+.cpsSec__nav a {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 199px;
+  height: 72px;
+  border: 2.4px solid #c2cadb;
+  border-radius: 50px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  gap: 16px;
+}
+.cpsSec__nav a.cpsSec__nav--on {
+  border: solid 2.4px #6c768e;
+  background-color: #fff;
+}
+.cpsSec__nav a.cpsSec__nav--on span {
+  color: #6c768e;
+}
+.cpsSec__nav a img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.cpsSec__nav a span {
+  color: #a0a8ba;
+  font-size: 26px;
+  font-weight: 900;
+}
+.cpsSec__card {
+  margin-top: 64px;
+}
+.cpsSec__cardImg {
+  width: 1062px;
+  height: 534px;
+}
+.cpsSec__cardText {
+  margin-top: 44px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 56px;
+  color: #555;
+}
+/* 인트로 페이지__cpsSec E */
+
 /*** 인트로 페이지 E ***/

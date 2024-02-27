@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import GnbHeader from '@/components/gnb/GnbHeader.vue';
+import GnbHeader from '@/components/common/gnb/GnbHeader.vue';
 import FooterComponent from '@/components/common/FooterComponent.vue';
 
 export default {

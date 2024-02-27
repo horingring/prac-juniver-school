@@ -593,12 +593,18 @@ body,
 .effectSec__accordionBody .accordion-item:not(:nth-last-child(1)) {
   border-bottom: 2px solid #f3f5fb;
 }
+.effectSec__accordionBody .accordion-item strong {
+  font-weight: 900;
+}
 .effectSec__accordionBody .study-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
 }
 .effectSec__accordionBody .study-list li {
   display: flex;
+}
+.effectSec__accordionBody .study-list strong {
+  font-weight: 700;
 }
 /* 인트로 페이지__effectSec E */
 

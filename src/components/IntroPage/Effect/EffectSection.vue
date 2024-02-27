@@ -35,19 +35,19 @@
               <strong>[논리]</strong>
               <ul class="study-list">
                 <li>
-                  <span>연구대상 |&nbsp;</span>
-                  <span>3-6세 아동</span>
+                  <strong>연구대상 |&nbsp;</strong>
+                  <span>3-6세 아동 100명</span>
                 </li>
                 <li>
-                  <span>연구대상 |&nbsp;</span>
-                  <span>3-6세 아동</span>
+                  <strong>연구기간 |&nbsp;</strong>
+                  <span>4주</span>
                 </li>
                 <li>
-                  <span>연구대상 |&nbsp;</span>
-                  <span>3-6세 아동</span>
+                  <strong>연구도구 |&nbsp;</strong>
+                  <span>한국 웩슬러 유아지능검사도구</span>
                 </li>
                 <li>
-                  <span>연구대상 |&nbsp;</span>
+                  <strong>연구기관 |&nbsp;</strong>
                   <span>
                     서울대 아동가족학과<br />
                     박유정 교수 연구실
@@ -56,22 +56,22 @@
               </ul>
             </li>
             <li class="accordion-item">
-              <strong>[논리]</strong>
+              <strong>[수학]</strong>
               <ul class="study-list">
                 <li>
-                  <span>연구대상 |&nbsp;</span>
-                  <span>3-6세 아동</span>
+                  <strong>연구대상 |&nbsp;</strong>
+                  <span>3-6세 아동 98명</span>
                 </li>
                 <li>
-                  <span>연구대상 |&nbsp;</span>
-                  <span>3-6세 아동</span>
+                  <strong>연구기간 |&nbsp;</strong>
+                  <span>10주</span>
                 </li>
                 <li>
-                  <span>연구대상 |&nbsp;</span>
-                  <span>3-6세 아동</span>
+                  <strong>연구도구 |&nbsp;</strong>
+                  <span>유아 그림수학능력 검사도구</span>
                 </li>
                 <li>
-                  <span>연구대상 |&nbsp;</span>
+                  <strong>연구기관 |&nbsp;</strong>
                   <span>
                     중앙대 유아교육과<br />
                     조형숙 교수 연구실

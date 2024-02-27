@@ -4,7 +4,7 @@
       <div class="effectSec__titleBox">
         <h3 class="effectSec__title">
           하루 15분, 우리 아이가
-          <span><span>똑똑해집니다</span></span>
+          <StrongSpan underline>똑똑해집니다</StrongSpan>
         </h3>
         <p class="effectSec__titleSub">
           유아 수학・인지 능력의 향상을 확인하였습니다.
@@ -87,7 +87,12 @@
 </template>
 
 <script>
+import StrongSpan from '@/components/common/ui/StrongSpan.vue';
+
 export default {
+  components: {
+    StrongSpan,
+  },
   data() {
     return {
       onAccordion: false,

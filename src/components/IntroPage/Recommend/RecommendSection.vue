@@ -4,9 +4,7 @@
       <h3 class="rcmdSec__title">
         먼저 써본<br />
         부모님이<br />
-        <span>
-          <span class="text">추천하는 앱</span>
-        </span>
+        <StrongSpan underline>추천하는 앱</StrongSpan>
       </h3>
       <div class="rcmdSec__awardWrap">
         <img
@@ -46,6 +44,7 @@
 import JrSwiper from '@/components/common/swiper/JrSwiper.vue';
 import { SwiperSlide } from 'swiper/vue';
 import SlideCard from './slideCard.vue';
+import StrongSpan from '@/components/common/ui/StrongSpan.vue';
 import client from 'api-client';
 
 export default {
@@ -53,6 +52,7 @@ export default {
     JrSwiper,
     SwiperSlide,
     SlideCard,
+    StrongSpan,
   },
   data() {
     return {

@@ -6,7 +6,7 @@
 
 <script>
 import GnbHeader from '@/components/common/gnb/GnbHeader.vue';
-import FooterComponent from '@/components/common/FooterComponent.vue';
+import FooterComponent from '@/components/common/footer/FooterComponent.vue';
 
 export default {
   name: 'App',

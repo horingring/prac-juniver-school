@@ -199,6 +199,64 @@ body,
 /* 헤더__gnb E */
 /*** 헤더 E ***/
 
+/*** 푸터 S ***/
+.footer {
+  background-color: #f1f5fb;
+}
+.footer__inner {
+  width: 1062px;
+  padding: 66px 0 67px;
+  margin: 0 auto;
+}
+.footer__logo {
+  display: block;
+  width: 180px;
+  height: 42px;
+  float: left;
+  background: url('@/assets/img/common/footer/logo_footer.png') no-repeat 0 50%/180px
+    42px;
+}
+.footer__linkList {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer__linkList > li {
+  height: 42px;
+}
+.footer__storeLinkItem > div {
+  background: url('@/assets/img/common/footer/icon_store.png') no-repeat 0 50%/78px
+    42px;
+  height: 42px;
+}
+.footer__storeLinkItem .footer__link {
+  width: 39px;
+  height: 42px;
+}
+.footer__linkList > li:not(:nth-last-child(1)) {
+  margin-right: 14px;
+}
+.footer__linkList .footer__link {
+  display: inline-block;
+}
+.footer__linkLogo {
+  width: 42px;
+  height: 42px;
+}
+.footer__text,
+.footer__copyright {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.52px;
+  color: #8a909e;
+}
+.footer__text {
+  margin-top: 26px;
+}
+.footer__copyright {
+  margin-top: 10px;
+}
+/*** 푸터 E ***/
+
 /*** 인트로 페이지 ***/
 /* 인트로 페이지__introSec S */
 #introPage .introSec {

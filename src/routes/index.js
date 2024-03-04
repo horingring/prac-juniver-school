@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import IntroPage from '@/pages/IntroPage.vue';
-import CurriculumPage from '@/pages/CurriculumPage.vue';
+import CurriculumPage from '@/pages/curriculum/CurriculumPage.vue';
 import WorkBookPage from '@/pages/WorkBookPage.vue';
 
 const routes = [

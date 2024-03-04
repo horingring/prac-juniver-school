@@ -71,6 +71,39 @@ body,
   background-color: #ffcd03;
   border-radius: 4px;
 }
+
+/* 아코디언 S */
+.accordion {
+  width: 100%;
+}
+.accordion__header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+  background-color: #c2cadb;
+  border-radius: 20px;
+}
+.accordion__btn {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.accordion.on .accordion__header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.accordion .accordion__body {
+  height: 300px;
+  background-color: #a0a8ba;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 2px solid rgba(163, 163, 181, 0.5);
+}
+
+/* 아코디언 E */
 /*** 공통 E ***/
 
 /*** 헤더 S ***/
@@ -257,7 +290,7 @@ body,
 }
 /*** 푸터 E ***/
 
-/*** 인트로 페이지 ***/
+/*** 인트로 페이지 S ***/
 /* 인트로 페이지__introSec S */
 #introPage .introSec {
   position: relative;
@@ -822,3 +855,268 @@ body,
 /* 인트로 페이지__cmtSec E */
 
 /*** 인트로 페이지 E ***/
+
+/*** 커리큘럼 페이지 S ***/
+#curriculumPage {
+  padding-top: 75px;
+}
+.curriculumPage {
+  width: 1062px;
+  padding-top: 238px;
+  margin: 0 auto;
+}
+/* 커리큘럼 페이지__introSec S */
+.curriculumPage .introSec {
+  position: relative;
+}
+.curriculumPage .introSec__title {
+  font-size: 54px;
+  font-weight: 900;
+  padding-left: 170px;
+  line-height: 1.41;
+  letter-spacing: -2.16px;
+}
+.curriculumPage.mathPage .introSec__title {
+  background: url('@/assets/img/CurriculumPage/mathPage/img_title_math.png')
+    no-repeat 0 50%/136px 141px;
+}
+.curriculumPage .introSec__title .strongBox {
+  display: inline-block;
+}
+.curriculumPage .introSec__title .strongBox__underline {
+  bottom: 8px;
+}
+.curriculumPage .introSec__titleBadge {
+  position: absolute;
+  box-sizing: border-box;
+  width: 244px;
+  height: 116px;
+  padding-top: 51px;
+  bottom: 8px;
+  right: 0;
+}
+.curriculumPage .introSec__titleBadge::before {
+  position: absolute;
+  content: '';
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 106px;
+  height: 48px;
+}
+.curriculumPage .introSec__titleBadge::after {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 30px;
+}
+.curriculumPage.mathPage .introSec__titleBadge {
+  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_math.png')
+    no-repeat 50% 0/244px 116px;
+}
+.curriculumPage.mathPage .introSec__titleBadge::before {
+  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_text_math.png')
+    no-repeat 50% 0/106px 48px;
+}
+.curriculumPage.mathPage .introSec__titleBadge::after {
+  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_ico_math.png')
+    no-repeat 50% 0/36px 30px;
+}
+.introSec__titleBadgeText {
+  text-align: center;
+  height: 116px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: -0.8px;
+}
+.curriculumPage.mathPage .introSec__titleBadgeText {
+  color: #97d97f;
+}
+/* 커리큘럼 페이지__introSec E */
+
+/* 커리큘럼 페이지__crclmSec S */
+.crclmSec__wrap {
+  padding: 160px 0 262px;
+}
+.crclmSec {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.crclmSec__title {
+  margin: 0 auto;
+  font-size: 36px;
+  font-weight: 900;
+  display: inline-block;
+  padding: 20px 28px 18px;
+  border-radius: 12px 12px 0 0;
+  line-height: 1.17;
+  letter-spacing: -1.44px;
+}
+.crclmSec--level1 .crclmSec__title {
+  background-color: #00cb50;
+}
+.crclmSec--level2 .crclmSec__title {
+  background-color: #fa2;
+}
+.crclmSec__title span {
+  color: #fff;
+}
+.crclmSec__title span.bar {
+  margin: 0 5px;
+}
+.crclmSec__title > span:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+.crclmSec__accordionList > li {
+  padding: 0 80px;
+  border-radius: 40px;
+  font-weight: 900;
+}
+.crclmSec__accordionList > li:not(:last-child) {
+  margin-bottom: 64px;
+}
+.crclmSec--level1 .crclmSec__accordionList > li {
+  background-color: #f0ffea;
+}
+.crclmSec--level2 .crclmSec__accordionList > li {
+  background-color: #fff5e0;
+}
+.crclmSec .accordion__header,
+.crclmSec .accordion__body {
+  background-color: transparent;
+}
+.crclmSec .accordion__header {
+  padding: 58px 0;
+  margin-bottom: 14px;
+}
+.crclmSec .accordion__header strong {
+  display: inline-block;
+  width: 161px;
+  font-size: 41px;
+  line-height: 66px;
+  letter-spacing: -1.92px;
+  vertical-align: top;
+}
+.crclmSec--level1 .accordion__header strong {
+  color: #00cb50;
+}
+.crclmSec--level2 .accordion__header strong {
+  color: #ffaa22;
+}
+.crclmSec .accordion__header p {
+  display: inline-block;
+  padding: 7px 0;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+  vertical-align: top;
+}
+.crclmSec .accordion__btn {
+  width: 239px;
+  height: 67px;
+  background: url('@/assets/img/CurriculumPage/mathPage/btn_math_toggle.png')
+    no-repeat 0 0/100% 100%;
+  border-radius: 0;
+}
+.crclmSec .on .accordion__btn {
+  background: url('@/assets/img/CurriculumPage/mathPage/btn_math_toggle_open.png')
+    no-repeat 0 0/100% 100%;
+}
+.crclmSec--level2 .accordion__btn {
+  background: url('@/assets/img/CurriculumPage/mathPage/btn_math_toggle_yellow.png')
+    no-repeat 0 0/100% 100%;
+}
+.crclmSec--level2 .on .accordion__btn {
+  background: url('@/assets/img/CurriculumPage/mathPage/btn_math_toggle_yellow_open.png')
+    no-repeat 0 0/100% 100%;
+}
+.crclmSec .accordion__body {
+  border-top: 4px solid #bef2ab;
+  padding-top: 72px;
+  height: fit-content;
+}
+.crclmSec--level2 .accordion__body {
+  border-color: #ffe3ac;
+}
+.crclmSec__detailList > li {
+  display: flex;
+  font-size: 32px;
+}
+.crclmSec__detailList h4 {
+  display: inline-block;
+  width: 122px;
+  height: 75px;
+  color: #fff;
+  background-color: #6c768e;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 75px;
+  letter-spacing: -1.28px;
+  margin-bottom: 50px;
+}
+.crclmSec--level1 .crclmSec__detailList h4 {
+  background-color: #00cb50;
+}
+.crclmSec--level2 .crclmSec__detailList h4 {
+  background-color: #fa2;
+}
+.crclmSec__detailList p {
+  padding-top: 14px;
+  padding-left: 28px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+}
+.crclmSec__imgList {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding: 76px 0 100px;
+}
+.crclmSec__imgList::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #bef2ab 48%, rgba(255, 255, 255, 0) 0%);
+  background-size: 32px 4px;
+}
+.crclmSec--level2 .crclmSec__imgList::before {
+  background: linear-gradient(to right, #ffe3ac 48%, rgba(255, 255, 255, 0) 0%);
+  background-size: 32px 4px;
+}
+.crclmSec__imgWrap {
+  width: 293px;
+  height: 220px;
+  overflow: hidden;
+}
+.crclmSec__imgWrap img {
+  width: 100%;
+  height: auto;
+}
+.crclmSec__imgList p {
+  padding-top: 26px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.42;
+  letter-spacing: -0.96px;
+  text-align: center;
+  color: #97d97f;
+}
+.crclmSec--level2 .crclmSec__imgList p {
+  color: #fabe45;
+}
+.crclmSec__downArrow {
+  height: 300px;
+  background: url('@/assets/img/CurriculumPage/mathPage/arr_math_progress.png')
+    no-repeat 50% 50%/100px 100px;
+}
+/* 커리큘럼 페이지__crclmSec E */
+/*** 커리큘럼 페이지 E ***/

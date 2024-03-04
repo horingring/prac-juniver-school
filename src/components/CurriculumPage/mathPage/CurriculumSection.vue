@@ -1,28 +1,33 @@
 <template>
-  <div class="mathPage curriculumPage">
-    <IntroSection useBadge>
-      <template #heading>
-        <StrongSpan color="#00cb50">348개</StrongSpan>의<br />
-        <StrongSpan underline underlineColor="#ddfed0"
-          >연령별 맞춤 수학 콘텐츠</StrongSpan
-        >
-      </template>
-      <template #badge>
-        <p class="introSec__titleBadgeText">
-          중앙대학교 유아교육학과<br />
-          조형숙 교수 연구팀
-        </p>
-      </template>
-    </IntroSection>
-    <CurriculumSection />
+  <div class="crclmSec__wrap">
+    <section
+      v-for="mathCurriculum in mathCurriculums"
+      :key="mathCurriculum.id"
+      class="crclmSec"
+      :class="[`crclmSec--level${mathCurriculum.level}`]"
+    >
+      <h3 class="crclmSec__title">
+        <span>{{ mathCurriculum.level }}단계</span>
+        <span class="bar"> | </span>
+        <span>{{ mathCurriculum.title }}</span>
+      </h3>
+      <ol class="crclmSec__accordionList">
+        <li v-for="step in mathCurriculum.steps" :key="step.id">
+          <StepAccordion :stepInfo="step" />
+        </li>
+      </ol>
+      <div class="crclmSec__downArrow"></div>
+    </section>
   </div>
 </template>
 
 <script>
-import IntroSection from '@/components/CurriculumPage/common/IntroSection.vue';
-import CurriculumSection from '@/components/CurriculumPage/mathPage/CurriculumSection.vue';
-import StrongSpan from '@/components/common/ui/StrongSpan.vue';
+import StepAccordion from './StepAccordion.vue';
+
 export default {
+  components: {
+    StepAccordion,
+  },
   data() {
     return {
       mathCurriculums: [
@@ -208,11 +213,6 @@ export default {
         },
       ],
     };
-  },
-  components: {
-    IntroSection,
-    StrongSpan,
-    CurriculumSection,
   },
 };
 </script>

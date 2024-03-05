@@ -52,6 +52,7 @@ body,
   margin: -1px !important;
 }
 
+/* StrongSpan S */
 .strongBox {
   position: relative;
 }
@@ -71,6 +72,7 @@ body,
   background-color: #ffcd03;
   border-radius: 4px;
 }
+/* StrongSpan E */
 
 /* 아코디언 S */
 .accordion {
@@ -102,8 +104,14 @@ body,
   border-bottom-right-radius: 20px;
   border-top: 2px solid rgba(163, 163, 181, 0.5);
 }
-
 /* 아코디언 E */
+.fade-transition {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out !important;
+}
+.fade-out-down {
+  transform: translateY(50px) !important;
+  opacity: 0 !important;
+}
 /*** 공통 E ***/
 
 /*** 헤더 S ***/
@@ -865,7 +873,8 @@ body,
   padding-top: 238px;
   margin: 0 auto;
 }
-/* 커리큘럼 페이지__introSec S */
+/* 커리큘럼 페이지__수학 S */
+/* 커리큘럼 페이지__수학__introSec S */
 .curriculumPage .introSec {
   position: relative;
 }
@@ -936,11 +945,11 @@ body,
 .curriculumPage.mathPage .introSec__titleBadgeText {
   color: #97d97f;
 }
-/* 커리큘럼 페이지__introSec E */
+/* 커리큘럼 페이지__수학__introSec E */
 
-/* 커리큘럼 페이지__crclmSec S */
+/* 커리큘럼 페이지__수학__crclmSec S */
 .crclmSec__wrap {
-  padding: 160px 0 262px;
+  padding-top: 160px;
 }
 .crclmSec {
   display: flex;
@@ -1118,5 +1127,72 @@ body,
   background: url('@/assets/img/CurriculumPage/mathPage/arr_math_progress.png')
     no-repeat 50% 50%/100px 100px;
 }
-/* 커리큘럼 페이지__crclmSec E */
+.completeSec__imgBox {
+  height: 462px;
+  background: url('@/assets/img/CurriculumPage/mathPage/bg_math_complete_back.png')
+    no-repeat 50% 0/1063px 730px;
+}
+.completeSec__img {
+  height: 100%;
+  background: url('@/assets/img/CurriculumPage/mathPage/bg_math_complete.png')
+    no-repeat 50% 0/1063px 730px;
+}
+/* 커리큘럼 페이지__수학__crclmSec E */
+/* 커리큘럼 페이지__수학 E */
+
+/* 커리큘럼 페이지__푸터 S */
+.crclmFooter {
+  position: relative;
+  z-index: 10;
+}
+.crclmFooter__fellowList {
+  width: 1062px;
+  margin: 0 auto;
+  display: flex;
+  padding: 114px 0 111px;
+}
+.crclmFooter--math {
+  background-color: #00cb50;
+}
+.crclmFooter--coding {
+  background-color: #019bff;
+}
+.crclmFooter--logic {
+  background-color: #8d7fe4;
+}
+.crclmFooter--lab {
+  background-color: #ff7fa3;
+}
+.crclmFooter--social {
+  background-color: #ffcd03;
+}
+.crclmFooter__fellowList > li {
+  width: 50%;
+}
+.crclmFooter__fellowTitle {
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.38;
+  letter-spacing: -1.92px;
+}
+.crclmFooter__fellowImg {
+  width: 119px;
+  height: auto;
+  margin-top: 37px;
+}
+.crclmFooter__fellows {
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 1.83;
+  letter-spacing: -0.96px;
+}
+.crclmFooter__fellows,
+.crclmFooter__fellows strong {
+  color: white;
+}
+.crclmFooter__fellows strong {
+  font-weight: 900;
+}
+/* 커리큘럼 페이지__푸터 E */
 /*** 커리큘럼 페이지 E ***/

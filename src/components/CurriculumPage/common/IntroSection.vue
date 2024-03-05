@@ -1,5 +1,5 @@
 <template>
-  <section class="introSec">
+  <section class="introSec fade-transition" :class="{ 'fade-out-down': !show }">
     <h3 class="introSec__title">
       <slot name="heading"></slot>
     </h3>
@@ -17,6 +17,14 @@ export default {
       required: false,
       defulat: false,
     },
+  },
+  data() {
+    return {
+      show: false,
+    };
+  },
+  mounted() {
+    this.show = true;
   },
 };
 </script>

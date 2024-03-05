@@ -18,11 +18,21 @@
       </ol>
       <div class="crclmSec__downArrow"></div>
     </section>
+    <section class="completeSec">
+      <div class="completeSec__imgBox">
+        <div
+          class="completeSec__img fade-transition"
+          :class="{ 'fade-out-down': !show }"
+        ></div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import StepAccordion from './StepAccordion.vue';
+import { getAbsoluteOffset } from '@/utils/getElementOffset';
+import { debounce } from 'lodash';
 
 export default {
   components: {
@@ -212,7 +222,44 @@ export default {
           ],
         },
       ],
+      completeSecImgAbsTop: 0,
+      show: false,
+      lastScrollTop: 0,
     };
+  },
+  created() {
+    // fade-in/fade-out을 위한 scroll 이벤트리스너 등록
+    this.debouncedFadeInOut = debounce(this.fadeInOut, 50);
+    window.addEventListener('scroll', this.debouncedFadeInOut);
+  },
+  mounted() {
+    // fade-in/fade-out 이미지의 절대좌표 계산/init
+    const completeSecImg = document.querySelector('.completeSec__img');
+    const { top } = getAbsoluteOffset(completeSecImg);
+    this.completeSecImgAbsTop = top;
+  },
+  beforeUnmount() {
+    // fade-in/fade-out을 위한 scroll 이벤트리스너 제거
+    window.removeEventListener('scroll', this.debouncedFadeInOut);
+  },
+  methods: {
+    fadeInOut() {
+      // 스크롤 down
+      const currentScroll = window.scrollY;
+      const viewPortHeightHalf = window.innerHeight / 2;
+      if (currentScroll > this.lastScrollTop) {
+        if (currentScroll >= this.completeSecImgAbsTop - viewPortHeightHalf) {
+          this.show = true;
+        }
+      }
+      // 스크롤 up
+      else {
+        if (currentScroll < this.completeSecImgAbsTop - viewPortHeightHalf) {
+          this.show = false;
+        }
+      }
+      this.lastScrollTop = currentScroll;
+    },
   },
 };
 </script>

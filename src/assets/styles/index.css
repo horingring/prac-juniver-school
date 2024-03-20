@@ -876,6 +876,13 @@ body,
 .curriculumPage .introSec {
   position: relative;
 }
+.curriculumPage .introSec__title {
+  font-size: 54px;
+  font-weight: 900;
+  padding-left: 170px;
+  line-height: 1.41;
+  letter-spacing: -2.16px;
+}
 .curriculumPage .introSec__title .strongBox {
   display: inline-block;
 }
@@ -931,13 +938,6 @@ body,
 }
 /* 커리큘럼 페이지__수학 S */
 /* 커리큘럼 페이지__수학__introSec S */
-.curriculumPage .introSec__title {
-  font-size: 54px;
-  font-weight: 900;
-  padding-left: 170px;
-  line-height: 1.41;
-  letter-spacing: -2.16px;
-}
 .curriculumPage.mathPage .introSec__title {
   background: url('@/assets/img/CurriculumPage/mathPage/img_title_math.png')
     no-repeat 0 50%/136px 141px;
@@ -1139,6 +1139,146 @@ body,
 }
 /* 커리큘럼 페이지__수학__crclmSec E */
 /* 커리큘럼 페이지__수학 E */
+
+/* 커리큘럼 페이지__코딩 S */
+.curriculumPage.codingPage .introSec {
+  padding-bottom: 140px;
+}
+.curriculumPage.codingPage .introSec__title {
+  background: url('@/assets/img/CurriculumPage/codingPage/img_title_cording.png')
+    no-repeat 0 50%/136px 141px;
+}
+.curriculumPage.codingPage .introSec__title .strongBox__underline {
+  opacity: 0.24;
+}
+.curriculumPage.codingPage .introSec__detailList {
+  padding-top: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.curriculumPage.codingPage .introSec__detailCard {
+  position: relative;
+  box-sizing: border-box;
+  width: 522px;
+  height: 468px;
+  border-radius: 24px;
+  padding: 44px 20px 32px;
+}
+.curriculumPage.codingPage .introSec__detailCard.info1 {
+  background: url('@/assets/img/CurriculumPage/codingPage/img_info_cording.png')
+    #ebf9ff no-repeat 50% 166px/293px 212px;
+}
+.curriculumPage.codingPage .introSec__detailCard.info2 {
+  background: url('@/assets/img/CurriculumPage/codingPage/img_info_cording_2.png')
+    #ebf9ff no-repeat 50% 179px/302px 231px;
+}
+.curriculumPage.codingPage .introSec__detailCard h4 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+}
+.curriculumPage.codingPage .introSec__detailCard p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.42;
+  letter-spacing: -0.96px;
+  left: 0;
+  bottom: 27px;
+  color: #555;
+}
+.codingPage .crclmSec .strongBox {
+  display: inline-block;
+  line-height: 1.5;
+}
+.codingPage .crclmSec .strongBox__underline {
+  height: 4px;
+  background-color: #33b9ff;
+  opacity: 0.8;
+  border-radius: 2px;
+  bottom: 0;
+}
+
+.curriculumPage.codingPage .crclmSec__wrap {
+  padding: 160px 0 262px;
+  width: 1062px;
+  margin: 0 auto;
+}
+.curriculumPage.codingPage .crclmSec {
+  padding-top: 132px;
+  width: 1062px;
+  height: 1233px;
+}
+.curriculumPage.codingPage .crclmSec.crclmSec--data {
+  background: url('@/assets/img/CurriculumPage/codingPage/bg_cording_box_01.png')
+    no-repeat 0 0/1062px 1233px;
+}
+.curriculumPage.codingPage .crclmSec__title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #019bff;
+  line-height: 1.38;
+  letter-spacing: -1.92px;
+  text-align: center;
+}
+.curriculumPage.codingPage .crclmSec.crclmSec--data .crclmSec__title {
+  padding-top: 69px;
+  background: url('@/assets/img/CurriculumPage/codingPage/img_cording_box_01.png')
+    no-repeat 50% 0/276px 44px;
+}
+.curriculumPage.codingPage .crclmSec__titleText {
+  padding: 28px 0 65px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+}
+
+.curriculumPage.codingPage .crclmSec__studyTitle {
+  display: inline-block;
+  background-color: #5f9ff9;
+  font-size: 24px;
+  font-weight: 900;
+  color: #e3f3ff;
+  height: 43px;
+  line-height: 43px;
+  letter-spacing: -0.96px;
+  border-radius: 21.5px;
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+.curriculumPage.codingPage .crclmSec__crclmList {
+  display: grid;
+  grid-template-columns: 293px 293px;
+  justify-content: center;
+  gap: 60px 40px;
+}
+.curriculumPage.codingPage .crclmSec__crclmItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.crclmSec__studyCard img {
+  width: 293px;
+  height: auto;
+  border-radius: 15px;
+}
+.crclmSec__studyCard p {
+  padding-top: 26px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.42;
+  letter-spacing: -0.96px;
+  text-align: center;
+  color: #8cb2c9;
+}
+/* 커리큘럼 페이지__코딩 E */
 
 /* 커리큘럼 페이지__푸터 S */
 .crclmFooter {

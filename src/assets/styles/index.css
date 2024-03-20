@@ -873,21 +873,8 @@ body,
   padding-top: 238px;
   margin: 0 auto;
 }
-/* 커리큘럼 페이지__수학 S */
-/* 커리큘럼 페이지__수학__introSec S */
 .curriculumPage .introSec {
   position: relative;
-}
-.curriculumPage .introSec__title {
-  font-size: 54px;
-  font-weight: 900;
-  padding-left: 170px;
-  line-height: 1.41;
-  letter-spacing: -2.16px;
-}
-.curriculumPage.mathPage .introSec__title {
-  background: url('@/assets/img/CurriculumPage/mathPage/img_title_math.png')
-    no-repeat 0 50%/136px 141px;
 }
 .curriculumPage .introSec__title .strongBox {
   display: inline-block;
@@ -942,21 +929,34 @@ body,
   line-height: 1.4;
   letter-spacing: -0.8px;
 }
+/* 커리큘럼 페이지__수학 S */
+/* 커리큘럼 페이지__수학__introSec S */
+.curriculumPage .introSec__title {
+  font-size: 54px;
+  font-weight: 900;
+  padding-left: 170px;
+  line-height: 1.41;
+  letter-spacing: -2.16px;
+}
+.curriculumPage.mathPage .introSec__title {
+  background: url('@/assets/img/CurriculumPage/mathPage/img_title_math.png')
+    no-repeat 0 50%/136px 141px;
+}
 .curriculumPage.mathPage .introSec__titleBadgeText {
   color: #97d97f;
 }
 /* 커리큘럼 페이지__수학__introSec E */
 
 /* 커리큘럼 페이지__수학__crclmSec S */
-.crclmSec__wrap {
+.mathPage .crclmSec__wrap {
   padding-top: 160px;
 }
-.crclmSec {
+.mathPage .crclmSec {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
-.crclmSec__title {
+.mathPage .crclmSec__title {
   margin: 0 auto;
   font-size: 36px;
   font-weight: 900;
@@ -966,44 +966,44 @@ body,
   line-height: 1.17;
   letter-spacing: -1.44px;
 }
-.crclmSec--level1 .crclmSec__title {
+.mathPage .crclmSec--level1 .crclmSec__title {
   background-color: #00cb50;
 }
-.crclmSec--level2 .crclmSec__title {
+.mathPage .crclmSec--level2 .crclmSec__title {
   background-color: #fa2;
 }
-.crclmSec__title span {
+.mathPage .crclmSec__title span {
   color: #fff;
 }
-.crclmSec__title span.bar {
+.mathPage .crclmSec__title span.bar {
   margin: 0 5px;
 }
-.crclmSec__title > span:last-child {
+.mathPage .crclmSec__title > span:last-child {
   color: rgba(255, 255, 255, 0.5);
 }
-.crclmSec__accordionList > li {
+.mathPage .crclmSec__accordionList > li {
   padding: 0 80px;
   border-radius: 40px;
   font-weight: 900;
 }
-.crclmSec__accordionList > li:not(:last-child) {
+.mathPage .crclmSec__accordionList > li:not(:last-child) {
   margin-bottom: 64px;
 }
-.crclmSec--level1 .crclmSec__accordionList > li {
+.mathPage .crclmSec--level1 .crclmSec__accordionList > li {
   background-color: #f0ffea;
 }
-.crclmSec--level2 .crclmSec__accordionList > li {
+.mathPage .crclmSec--level2 .crclmSec__accordionList > li {
   background-color: #fff5e0;
 }
-.crclmSec .accordion__header,
-.crclmSec .accordion__body {
+.mathPage .crclmSec .accordion__header,
+.mathPage .crclmSec .accordion__body {
   background-color: transparent;
 }
-.crclmSec .accordion__header {
+.mathPage .crclmSec .accordion__header {
   padding: 58px 0;
   margin-bottom: 14px;
 }
-.crclmSec .accordion__header strong {
+.mathPage .crclmSec .accordion__header strong {
   display: inline-block;
   width: 161px;
   font-size: 41px;
@@ -1011,13 +1011,13 @@ body,
   letter-spacing: -1.92px;
   vertical-align: top;
 }
-.crclmSec--level1 .accordion__header strong {
+.mathPage .crclmSec--level1 .accordion__header strong {
   color: #00cb50;
 }
-.crclmSec--level2 .accordion__header strong {
+.mathPage .crclmSec--level2 .accordion__header strong {
   color: #ffaa22;
 }
-.crclmSec .accordion__header p {
+.mathPage .crclmSec .accordion__header p {
   display: inline-block;
   padding: 7px 0;
   font-size: 32px;
@@ -1025,38 +1025,38 @@ body,
   letter-spacing: -1.28px;
   vertical-align: top;
 }
-.crclmSec .accordion__btn {
+.mathPage .crclmSec .accordion__btn {
   width: 239px;
   height: 67px;
   background: url('@/assets/img/CurriculumPage/mathPage/btn_math_toggle.png')
     no-repeat 0 0/100% 100%;
   border-radius: 0;
 }
-.crclmSec .on .accordion__btn {
+.mathPage .crclmSec .on .accordion__btn {
   background: url('@/assets/img/CurriculumPage/mathPage/btn_math_toggle_open.png')
     no-repeat 0 0/100% 100%;
 }
-.crclmSec--level2 .accordion__btn {
+.mathPage .crclmSec--level2 .accordion__btn {
   background: url('@/assets/img/CurriculumPage/mathPage/btn_math_toggle_yellow.png')
     no-repeat 0 0/100% 100%;
 }
-.crclmSec--level2 .on .accordion__btn {
+.mathPage .crclmSec--level2 .on .accordion__btn {
   background: url('@/assets/img/CurriculumPage/mathPage/btn_math_toggle_yellow_open.png')
     no-repeat 0 0/100% 100%;
 }
-.crclmSec .accordion__body {
+.mathPage .crclmSec .accordion__body {
   border-top: 4px solid #bef2ab;
   padding-top: 72px;
   height: fit-content;
 }
-.crclmSec--level2 .accordion__body {
+.mathPage .crclmSec--level2 .accordion__body {
   border-color: #ffe3ac;
 }
-.crclmSec__detailList > li {
+.mathPage .crclmSec__detailList > li {
   display: flex;
   font-size: 32px;
 }
-.crclmSec__detailList h4 {
+.mathPage .crclmSec__detailList h4 {
   display: inline-block;
   width: 122px;
   height: 75px;
@@ -1068,27 +1068,27 @@ body,
   letter-spacing: -1.28px;
   margin-bottom: 50px;
 }
-.crclmSec--level1 .crclmSec__detailList h4 {
+.mathPage .crclmSec--level1 .crclmSec__detailList h4 {
   background-color: #00cb50;
 }
-.crclmSec--level2 .crclmSec__detailList h4 {
+.mathPage .crclmSec--level2 .crclmSec__detailList h4 {
   background-color: #fa2;
 }
-.crclmSec__detailList p {
+.mathPage .crclmSec__detailList p {
   padding-top: 14px;
   padding-left: 28px;
   margin-bottom: 50px;
   line-height: 1.5;
   letter-spacing: -1.28px;
 }
-.crclmSec__imgList {
+.mathPage .crclmSec__imgList {
   position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 22px;
   padding: 76px 0 100px;
 }
-.crclmSec__imgList::before {
+.mathPage .crclmSec__imgList::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1097,20 +1097,20 @@ body,
   background: linear-gradient(to right, #bef2ab 48%, rgba(255, 255, 255, 0) 0%);
   background-size: 32px 4px;
 }
-.crclmSec--level2 .crclmSec__imgList::before {
+.mathPage .crclmSec--level2 .crclmSec__imgList::before {
   background: linear-gradient(to right, #ffe3ac 48%, rgba(255, 255, 255, 0) 0%);
   background-size: 32px 4px;
 }
-.crclmSec__imgWrap {
+.mathPage .crclmSec__imgWrap {
   width: 293px;
   height: 220px;
   overflow: hidden;
 }
-.crclmSec__imgWrap img {
+.mathPage .crclmSec__imgWrap img {
   width: 100%;
   height: auto;
 }
-.crclmSec__imgList p {
+.mathPage .crclmSec__imgList p {
   padding-top: 26px;
   font-size: 24px;
   font-weight: 900;
@@ -1119,20 +1119,20 @@ body,
   text-align: center;
   color: #97d97f;
 }
-.crclmSec--level2 .crclmSec__imgList p {
+.mathPage .crclmSec--level2 .crclmSec__imgList p {
   color: #fabe45;
 }
-.crclmSec__downArrow {
+.mathPage .crclmSec__downArrow {
   height: 300px;
   background: url('@/assets/img/CurriculumPage/mathPage/arr_math_progress.png')
     no-repeat 50% 50%/100px 100px;
 }
-.completeSec__imgBox {
+.mathPage .completeSec__imgBox {
   height: 462px;
   background: url('@/assets/img/CurriculumPage/mathPage/bg_math_complete_back.png')
     no-repeat 50% 0/1063px 730px;
 }
-.completeSec__img {
+.mathPage .completeSec__img {
   height: 100%;
   background: url('@/assets/img/CurriculumPage/mathPage/bg_math_complete.png')
     no-repeat 50% 0/1063px 730px;

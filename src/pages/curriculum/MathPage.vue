@@ -23,6 +23,11 @@ import IntroSection from '@/components/CurriculumPage/common/IntroSection.vue';
 import CurriculumSection from '@/components/CurriculumPage/mathPage/CurriculumSection.vue';
 import StrongSpan from '@/components/common/ui/StrongSpan.vue';
 export default {
+  components: {
+    IntroSection,
+    StrongSpan,
+    CurriculumSection,
+  },
   data() {
     return {
       mathCurriculums: [
@@ -208,11 +213,6 @@ export default {
         },
       ],
     };
-  },
-  components: {
-    IntroSection,
-    StrongSpan,
-    CurriculumSection,
   },
 };
 </script>

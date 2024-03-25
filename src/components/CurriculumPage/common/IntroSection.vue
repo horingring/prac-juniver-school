@@ -32,10 +32,17 @@ export default {
   data() {
     return {
       show: false,
+      timeout: null,
     };
   },
   mounted() {
-    this.show = true;
+    this.timeout = setTimeout(() => {
+      this.show = true;
+    }, 0);
+  },
+  beforeUnmount() {
+    clearTimeout(this.timeout);
+    this.timeout = null;
   },
 };
 </script>

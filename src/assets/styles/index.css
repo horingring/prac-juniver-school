@@ -43,6 +43,10 @@ body,
   justify-content: center;
   align-items: center;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 .blind {
   overflow: hidden !important;
   position: absolute !important;
@@ -1210,13 +1214,35 @@ body,
   margin: 0 auto;
 }
 .curriculumPage.codingPage .crclmSec {
-  padding-top: 132px;
   width: 1062px;
-  height: 1233px;
+  box-sizing: border-box;
+}
+.curriculumPage.codingPage .crclmSec:not(:first-child) {
+  margin-top: 200px;
 }
 .curriculumPage.codingPage .crclmSec.crclmSec--data {
+  padding-top: 132px;
+  height: 1233px;
   background: url('@/assets/img/CurriculumPage/codingPage/bg_cording_box_01.png')
     no-repeat 0 0/1062px 1233px;
+}
+.curriculumPage.codingPage .crclmSec.crclmSec--algorithm {
+  padding-top: 133px;
+  height: 968px;
+  background: url('@/assets/img/CurriculumPage/codingPage/bg_cording_box_02.png')
+    no-repeat 50% 53px/1063px 917px;
+}
+.curriculumPage.codingPage .crclmSec.crclmSec--programming {
+  padding-top: 100px;
+  height: 1445px;
+  background: url('@/assets/img/CurriculumPage/codingPage/bg_cording_box_03.png')
+    no-repeat 50% 0/1062px 1445px;
+}
+.curriculumPage.codingPage .crclmSec.crclmSec--ai {
+  padding-top: 78px;
+  height: 1451px;
+  background: url('@/assets/img/CurriculumPage/codingPage/bg_cording_box_04.png')
+    no-repeat 50% 0/1063px 1451px;
 }
 .curriculumPage.codingPage .crclmSec__title {
   font-size: 48px;
@@ -1231,6 +1257,21 @@ body,
   background: url('@/assets/img/CurriculumPage/codingPage/img_cording_box_01.png')
     no-repeat 50% 0/276px 44px;
 }
+.curriculumPage.codingPage .crclmSec.crclmSec--algorithm .crclmSec__title {
+  padding-top: 130px;
+  background: url('@/assets/img/CurriculumPage/codingPage/img_cording_box_02.png')
+    no-repeat 50% 0/184px 106px;
+}
+.curriculumPage.codingPage .crclmSec.crclmSec--programming .crclmSec__title {
+  padding-top: 121px;
+  background: url('@/assets/img/CurriculumPage/codingPage/img_cording_box_03.png')
+    no-repeat 50% 0/253px 96px;
+}
+.curriculumPage.codingPage .crclmSec.crclmSec--ai .crclmSec__title {
+  padding-top: 143px;
+  background: url('@/assets/img/CurriculumPage/codingPage/img_cording_box_04.png')
+    no-repeat 50% 0/168px 117px;
+}
 .curriculumPage.codingPage .crclmSec__titleText {
   padding: 28px 0 65px;
   text-align: center;
@@ -1240,6 +1281,14 @@ body,
   letter-spacing: -1.28px;
 }
 
+.curriculumPage.codingPage
+  .crclmSec--programming
+  .crclmSec__studyCards:not(div:first-of-type),
+.curriculumPage.codingPage
+  .crclmSec--ai
+  .crclmSec__studyCards:not(div:first-of-type) {
+  margin-top: 95px;
+}
 .curriculumPage.codingPage .crclmSec__studyTitle {
   display: inline-block;
   background-color: #5f9ff9;
@@ -1253,16 +1302,38 @@ body,
   padding: 0 20px;
   margin-bottom: 32px;
 }
+.curriculumPage.codingPage .crclmSec__studyTitleDesc {
+  margin-top: -22px;
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  text-align: center;
+  color: #5f9ff9;
+}
 .curriculumPage.codingPage .crclmSec__crclmList {
   display: grid;
-  grid-template-columns: 293px 293px;
   justify-content: center;
+}
+.curriculumPage.codingPage .crclmSec--data .crclmSec__crclmList {
+  grid-template-columns: 293px 293px;
   gap: 60px 40px;
 }
-.curriculumPage.codingPage .crclmSec__crclmItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.curriculumPage.codingPage .crclmSec--algorithm .crclmSec__crclmList {
+  grid-template-columns: 293px 293px 293px;
+  gap: 40px;
+}
+.curriculumPage.codingPage .crclmSec--programming .crclmSec__crclmList,
+.curriculumPage.codingPage .crclmSec--ai .crclmSec__crclmList {
+  grid-template-columns: 293px 293px;
+  gap: 40px;
+}
+.curriculumPage.codingPage
+  .crclmSec--ai
+  .crclmSec__studyCards:nth-last-child(1)
+  .crclmSec__crclmList {
+  grid-template-columns: 293px;
 }
 .crclmSec__studyCard img {
   width: 293px;

@@ -9,7 +9,7 @@
         <IntroDetail />
       </template>
     </IntroSection>
-    <CurriculumSection />
+    <CurriculumSectionWrap />
   </div>
 </template>
 
@@ -17,13 +17,13 @@
 import IntroSection from '@/components/CurriculumPage/common/IntroSection.vue';
 import StrongSpan from '@/components/common/ui/StrongSpan.vue';
 import IntroDetail from '@/components/CurriculumPage/codingPage/IntroDetail.vue';
-import CurriculumSection from '@/components/CurriculumPage/codingPage/CurriculumSection.vue';
+import CurriculumSectionWrap from '@/components/CurriculumPage/codingPage/CurriculumSectionWrap.vue';
 export default {
   components: {
     IntroSection,
     StrongSpan,
     IntroDetail,
-    CurriculumSection,
+    CurriculumSectionWrap,
   },
 };
 </script>

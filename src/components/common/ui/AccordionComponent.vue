@@ -1,10 +1,14 @@
 <template>
   <div class="accordion" :class="{ on: isShow }">
-    <section class="accordion__header">
-      <div>
+    <section
+      class="accordion__header"
+      :class="{ 'accordion__header--headerAsBtn': headerAsBtn }"
+      @click="onClickHeader"
+    >
+      <div class="accordion__headerText">
         <slot name="header"></slot>
       </div>
-      <button @click="toggleAccordion" class="accordion__btn flex-center">
+      <button @click.stop="toggleAccordion" class="accordion__btn flex-center">
         <span class="accordion__btnText" :class="{ blind: btnTextBlind }">
           {{ isShow ? btnTextOn : btnTextOff }}
         </span>
@@ -29,6 +33,11 @@ export default {
       required: false,
       default: false,
     },
+    headerAsBtn: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
     btnTextBlind: {
       type: Boolean,
       required: false,
@@ -49,6 +58,9 @@ export default {
     if (this.show) this.isShow = true;
   },
   methods: {
+    onClickHeader() {
+      if (this.headerAsBtn) this.toggleAccordion();
+    },
     toggleAccordion() {
       this.isShow = !this.isShow;
     },

@@ -90,6 +90,9 @@ body,
   background-color: #c2cadb;
   border-radius: 20px;
 }
+.accordion__header--headerAsBtn {
+  cursor: pointer;
+}
 .accordion__btn {
   width: 50px;
   height: 50px;
@@ -641,26 +644,24 @@ body,
   height: 764px;
   margin-bottom: 64px;
 }
-
-.effectSec__accordion {
+/* 인트로 페이지__effectSec__아코디언 S */
+.effectSec .accordion {
   width: 800px;
   margin: 0 auto;
 }
-.effectSec__accordionBtn {
+.effectSec .accordion__header {
+  justify-content: center;
   position: relative;
-  display: inline-block;
-  width: 100%;
   height: 67px;
   background-color: #f3f5fb;
   border-radius: 12px;
-  cursor: pointer;
 }
-.effectSec__accordionBtn > strong {
+.effectSec .accordion__headerText > strong {
   color: #6c768e;
   font-size: 30px;
   font-weight: 900;
 }
-.effectSec__accordionBtn::after {
+.effectSec .accordion__btn {
   position: absolute;
   top: calc(50% - 20px);
   right: 32px;
@@ -672,44 +673,42 @@ body,
     transparent no-repeat 50% 50%/40px 40px;
   transform: rotate(180deg);
 }
-.effectSec__accordion--on .effectSec__accordionBtn {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.effectSec__accordion--on .effectSec__accordionBtn::after {
+.effectSec .accordion.on .accordion__btn {
   transform: rotate(0deg);
 }
-
-.effectSec__accordionBody {
-  width: 100%;
+.effectSec .accordion__body {
+  height: fit-content;
   background-color: #fcfcfc;
   font-size: 22px;
   border-top: 2px solid #d8dded;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
-.effectSec__accordionBody * {
+.effectSec .accordion__body * {
   color: #555;
 }
-.effectSec__accordionBody .accordion-item {
+.effectSec .accordion__body .accordion-item {
   text-align: start;
   padding: 24px 32px;
   line-height: 38px;
 }
-.effectSec__accordionBody .accordion-item:not(:nth-last-child(1)) {
+.effectSec .accordion__body .accordion-item:not(:nth-last-child(1)) {
   border-bottom: 2px solid #f3f5fb;
 }
-.effectSec__accordionBody .accordion-item strong {
+.effectSec .accordion__body .accordion-item strong {
   font-weight: 900;
 }
-.effectSec__accordionBody .study-list {
+.effectSec .accordion__body .study-list {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
 }
-.effectSec__accordionBody .study-list li {
+.effectSec .accordion__body .study-list li {
   display: flex;
 }
-.effectSec__accordionBody .study-list strong {
+.effectSec .accordion__body .study-list strong {
   font-weight: 700;
 }
+/* 인트로 페이지__effectSec__아코디언 E */
 /* 인트로 페이지__effectSec E */
 
 /* 인트로 페이지__cpsSec S */

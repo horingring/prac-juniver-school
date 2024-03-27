@@ -17,14 +17,11 @@
         "
         alt="effect-img"
       />
-      <div
-        class="effectSec__accordion"
-        :class="{ 'effectSec__accordion--on': onAccordion }"
-      >
-        <button class="effectSec__accordionBtn" @click="toggleAccordion">
+      <AccordionComponent headerAsBtn btnTextBlind>
+        <template #header>
           <strong>어떻게 연구했나요?</strong>
-        </button>
-        <div class="effectSec__accordionBody" :class="{ blind: !onAccordion }">
+        </template>
+        <template #body>
           <p class="accordion-item">
             쥬니버스쿨을 꾸준히 사용한 만 3-6세 아동의 수학능력(수와 연산, 측정,
             기하 영역)과 인지능력(처리속도, 언어이해, 시공간 영역)이 향상됨을
@@ -80,28 +77,20 @@
               </ul>
             </li>
           </ul>
-        </div>
-      </div>
+        </template>
+      </AccordionComponent>
     </div>
   </section>
 </template>
 
 <script>
 import StrongSpan from '@/components/common/ui/StrongSpan.vue';
+import AccordionComponent from '@/components/common/ui/AccordionComponent.vue';
 
 export default {
   components: {
     StrongSpan,
-  },
-  data() {
-    return {
-      onAccordion: false,
-    };
-  },
-  methods: {
-    toggleAccordion() {
-      this.onAccordion = !this.onAccordion;
-    },
+    AccordionComponent,
   },
 };
 </script>

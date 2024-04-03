@@ -135,6 +135,142 @@
         </li>
       </ul>
     </section>
+
+    <section class="crclmSec crclmSec--space">
+      <h3 class="crclmSec__title">
+        <StrongSpan class="crclmSec__titleMain">공간지각</StrongSpan><br />
+        <StrongSpan class="crclmSec__titleDesc"
+          >어떤 조각을 넣어야 완성될까?</StrongSpan
+        >
+      </h3>
+      <p class="crclmSec__titleText">
+        사물과 공간의 위치, 방향 관계를 파악해 공간 감각력을 길러요
+      </p>
+      <ul class="crclmSec__crclmList flex-center">
+        <li class="flex-center flex-column">
+          <p class="crclmSec__studyCardDesc">
+            두 조각을 합치면<br />
+            어떤 모습인지 찾아요
+          </p>
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_10.png"
+              alt="종이 조각을 합치면?"
+            />
+            <p>종이 조각을 합치면?</p>
+          </div>
+        </li>
+        <li class="flex-center flex-column">
+          <p class="crclmSec__studyCardDesc">
+            도형을 채워<br />
+            빠진 길을 완성해요
+          </p>
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_11.png"
+              alt="고양이를 도와줘"
+            />
+            <p>고양이를 도와줘</p>
+          </div>
+        </li>
+        <li class="flex-center flex-column">
+          <p class="crclmSec__studyCardDesc">
+            회전했을 때<br />
+            같은 그림을 찾아요
+          </p>
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_12.png"
+              alt="웰컴 투 고스트 월드"
+            />
+            <p>웰컴 투 고스트 월드</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="crclmSec crclmSec--inference">
+      <h3 class="crclmSec__title">
+        <StrongSpan class="crclmSec__titleMain">추론</StrongSpan><br />
+        <StrongSpan class="crclmSec__titleDesc">어떤 규칙이 있을까?</StrongSpan>
+      </h3>
+      <p class="crclmSec__titleText">
+        그림을 보고 규칙이나 서로간의 관게를 파악해 추리력을 길러요
+      </p>
+      <ul class="crclmSec__crclmList flex-center">
+        <li class="flex-center flex-column">
+          <p class="crclmSec__studyCardDesc">패턴 규칙을 찾아요</p>
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_13.png"
+              alt="탐험을 떠나요"
+            />
+            <p>탐험을 떠나요</p>
+          </div>
+        </li>
+        <li class="flex-center flex-column">
+          <p class="crclmSec__studyCardDesc">서로 어떤 관계인지 파악해요</p>
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_14.png"
+              alt="어울리는 짝을 찾아요"
+            />
+            <p>어울리는 짝을 찾아요</p>
+          </div>
+        </li>
+        <li class="flex-center flex-column">
+          <p class="crclmSec__studyCardDesc">같은 관계를 가진 짝을 찾아요</p>
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_15.png"
+              alt="음식을 정리해요"
+            />
+            <p>음식을 정리해요</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="crclmSec crclmSec--categorization">
+      <h3 class="crclmSec__title">
+        <StrongSpan class="crclmSec__titleMain">분류</StrongSpan><br />
+        <StrongSpan class="crclmSec__titleDesc"
+          >어떻게 나눌 수 있을까?</StrongSpan
+        >
+      </h3>
+      <p class="crclmSec__titleText">
+        서로 다른 사물을 기준에 따라 가를 수 있어요
+      </p>
+      <ul class="crclmSec__crclmList flex-center">
+        <li class="flex-center flex-column">
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_16.png"
+              alt="쏙쏙, 분리수거를 해요"
+            />
+            <p>쏙쏙, 분리수거를 해요</p>
+          </div>
+        </li>
+        <li class="flex-center flex-column">
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_17.png"
+              alt="알록달록 장난감 정리"
+            />
+            <p>알록달록 장난감 정리</p>
+          </div>
+        </li>
+        <li class="flex-center flex-column">
+          <div class="crclmSec__studyCard">
+            <img
+              src="@/assets/img/CurriculumPage/logicPage/img_card_logic_18.png"
+              alt="반짝 반짝 작은 별"
+            />
+            <p>반짝 반짝 작은 별</p>
+          </div>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 

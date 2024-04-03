@@ -1405,6 +1405,37 @@ body,
   background: url('@/assets/img/CurriculumPage/logicPage/bg_logic_box_03.png')
     no-repeat 50% 0/1062px 859px;
 }
+.logicPage .crclmSec--space {
+  position: relative;
+  height: 1063px;
+  background: url('@/assets/img/CurriculumPage/logicPage/bg_logic_box_04.png')
+    no-repeat 50% 0/1062px 1063px;
+  padding-top: 169px;
+}
+.logicPage .crclmSec--space::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 746px;
+  display: block;
+  width: 260px;
+  height: 260px;
+  background: url('@/assets/img/CurriculumPage/logicPage/img_logic_ico_04.png')
+    no-repeat 50% 0 / 100% 100%;
+  z-index: -1;
+}
+.logicPage .crclmSec--inference {
+  height: 943px;
+  border-radius: 80px;
+  background-color: #f3f2ff;
+  padding-top: 100px;
+}
+.logicPage .crclmSec--categorization {
+  height: 845px;
+  border-radius: 500px 500px 0 0;
+  background-color: #f3f2ff;
+  padding-top: 131px;
+}
 .curriculumPage.logicPage .crclmSec__title {
   font-size: 48px;
   font-weight: 900;
@@ -1426,6 +1457,21 @@ body,
   padding-top: 117px;
   background: url('@/assets/img/CurriculumPage/logicPage/img_logic_box_03.png')
     no-repeat 50% 0/94px 92px;
+}
+.logicPage .crclmSec--space .crclmSec__title {
+  padding-top: 134px;
+  background: url('@/assets/img/CurriculumPage/logicPage/img_logic_box_04.png')
+    no-repeat 50% 0/96px 109px;
+}
+.logicPage .crclmSec--inference .crclmSec__title {
+  padding-top: 123px;
+  background: url('@/assets/img/CurriculumPage/logicPage/img_logic_box_05.png')
+    no-repeat 50% 0/98px 98px;
+}
+.logicPage .crclmSec--categorization .crclmSec__title {
+  padding-top: 64px;
+  background: url('@/assets/img/CurriculumPage/logicPage/img_logic_box_06.png')
+    no-repeat 50% 0/188px 49px;
 }
 .curriculumPage.logicPage
   .crclmSec__title

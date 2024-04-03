@@ -919,18 +919,6 @@ body,
   width: 36px;
   height: 30px;
 }
-.curriculumPage.mathPage .introSec__titleBadge {
-  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_math.png')
-    no-repeat 50% 0/244px 116px;
-}
-.curriculumPage.mathPage .introSec__titleBadge::before {
-  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_text_math.png')
-    no-repeat 50% 0/106px 48px;
-}
-.curriculumPage.mathPage .introSec__titleBadge::after {
-  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_ico_math.png')
-    no-repeat 50% 0/36px 30px;
-}
 .introSec__titleBadgeText {
   text-align: center;
   height: 116px;
@@ -947,6 +935,18 @@ body,
 }
 .curriculumPage.mathPage .introSec__titleBadgeText {
   color: #97d97f;
+}
+.curriculumPage.mathPage .introSec__titleBadge {
+  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_math.png')
+    no-repeat 50% 0/244px 116px;
+}
+.curriculumPage.mathPage .introSec__titleBadge::before {
+  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_text_math.png')
+    no-repeat 50% 0/106px 48px;
+}
+.curriculumPage.mathPage .introSec__titleBadge::after {
+  background: url('@/assets/img/CurriculumPage/mathPage/bg_badge_ico_math.png')
+    no-repeat 50% 0/36px 30px;
 }
 /* 커리큘럼 페이지__수학__introSec E */
 
@@ -1349,6 +1349,35 @@ body,
   color: #8cb2c9;
 }
 /* 커리큘럼 페이지__코딩 E */
+
+/* 커리큘럼 페이지__논리 S */
+/* 커리큘럼 페이지__논리__introSec S */
+.curriculumPage.logicPage .introSec__title {
+  padding-top: 30px;
+  background: url('@/assets/img/CurriculumPage/logicPage/img_title_logic.png')
+    no-repeat 0 100%/136px 180px;
+}
+.curriculumPage.logicPage .introSec__title .strongBox__underline {
+  opacity: 0.24;
+}
+.curriculumPage.logicPage .introSec__titleBadgeText {
+  color: #a9a3d6;
+}
+.curriculumPage.logicPage .introSec__titleBadge {
+  background: url('@/assets/img/CurriculumPage/logicPage/bg_badge_logic.png')
+    no-repeat 50% 0/244px 116px;
+  right: -31px;
+}
+.curriculumPage.logicPage .introSec__titleBadge::before {
+  background: url('@/assets/img/CurriculumPage/logicPage/bg_badge_text_logic.png')
+    no-repeat 50% 0/106px 48px;
+}
+.curriculumPage.logicPage .introSec__titleBadge::after {
+  background: url('@/assets/img/CurriculumPage/logicPage/bg_badge_ico_logic.png')
+    no-repeat 50% 0/36px 30px;
+}
+/* 커리큘럼 페이지__논리__introSec E */
+/* 커리큘럼 페이지__논리 E */
 
 /* 커리큘럼 페이지__푸터 S */
 .crclmFooter {

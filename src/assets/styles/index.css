@@ -1377,6 +1377,112 @@ body,
     no-repeat 50% 0/36px 30px;
 }
 /* 커리큘럼 페이지__논리__introSec E */
+
+/* 커리큘럼 페이지__논리__crclmSec S */
+.logicPage .crclmSec__wrap {
+  padding: 160px 0 262px;
+  width: 1062px;
+}
+.logicPage .crclmSec {
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.logicPage .crclmSec + .crclmSec {
+  margin-top: 200px;
+}
+.logicPage .crclmSec--discrimination {
+  height: 948px;
+  background: url('@/assets/img/CurriculumPage/logicPage/bg_logic_box_01.png')
+    no-repeat 0 0/1062px 948px;
+}
+.logicPage .crclmSec--memory {
+  height: 985px;
+  border-radius: 80px;
+  background-color: #f3f2ff;
+}
+.logicPage .crclmSec--grouping {
+  height: 859px;
+  background: url('@/assets/img/CurriculumPage/logicPage/bg_logic_box_03.png')
+    no-repeat 50% 0/1062px 859px;
+}
+.curriculumPage.logicPage .crclmSec__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.58;
+  letter-spacing: -1.92px;
+  text-align: center;
+}
+.logicPage .crclmSec--discrimination .crclmSec__title {
+  padding-top: 95px;
+  background: url('@/assets/img/CurriculumPage/logicPage/img_logic_box_01.png')
+    no-repeat 50% 0/190px 69px;
+}
+.logicPage .crclmSec--memory .crclmSec__title {
+  padding-top: 165px;
+  background: url('@/assets/img/CurriculumPage/logicPage/img_logic_box_02.png')
+    no-repeat 50% 0/152px 140px;
+}
+.logicPage .crclmSec--grouping .crclmSec__title {
+  padding-top: 117px;
+  background: url('@/assets/img/CurriculumPage/logicPage/img_logic_box_03.png')
+    no-repeat 50% 0/94px 92px;
+}
+.curriculumPage.logicPage
+  .crclmSec__title
+  .crclmSec__titleMain
+  .strongBox__text,
+.curriculumPage.logicPage
+  .crclmSec__title
+  .crclmSec__titleDesc
+  .strongBox__text {
+  color: #8d7fe4;
+}
+.curriculumPage.logicPage .crclmSec__titleText {
+  margin-top: 23px;
+  padding-bottom: 64px;
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+  text-align: center;
+  color: #232323;
+}
+.curriculumPage.logicPage .crclmSec__studyCardDesc {
+  position: relative;
+  height: auto;
+  background: none;
+  padding: 20px 0 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.42;
+  letter-spacing: -0.96px;
+  color: #555;
+  text-align: center;
+}
+.curriculumPage.logicPage .crclmSec__crclmList {
+  gap: 40px;
+}
+.curriculumPage.logicPage .crclmSec__studyCardDesc::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 24px;
+  height: 3px;
+  background-color: #8d7fe4;
+}
+.curriculumPage.logicPage .crclmSec__studyCard {
+  width: 293px;
+}
+.curriculumPage.logicPage .crclmSec__studyCard p {
+  color: #aaa3d6;
+}
+/* 커리큘럼 페이지__논리__crclmSec E */
 /* 커리큘럼 페이지__논리 E */
 
 /* 커리큘럼 페이지__푸터 S */

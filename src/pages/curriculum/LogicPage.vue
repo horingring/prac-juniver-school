@@ -14,16 +14,19 @@
         </p>
       </template>
     </IntroSection>
+    <CurriculumSectionWrap />
   </div>
 </template>
 
 <script>
 import IntroSection from '@/components/CurriculumPage/common/IntroSection.vue';
+import CurriculumSectionWrap from '@/components/CurriculumPage/logicPage/CurriculumSectionWrap.vue';
 import StrongSpan from '@/components/common/ui/StrongSpan.vue';
 
 export default {
   components: {
     IntroSection,
+    CurriculumSectionWrap,
     StrongSpan,
   },
 };

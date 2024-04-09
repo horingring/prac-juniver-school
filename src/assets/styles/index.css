@@ -1583,6 +1583,100 @@ body,
   bottom: 27px;
   color: #555;
 }
+/* 커리큘럼 페이지__실험실__crclmSec S */
+.labPage .crclmSec__wrap {
+  padding: 160px 0 262px;
+  width: 1062px;
+}
+.labPage .crclmSec {
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+.labPage .crclmSec .strongBox__underline {
+  height: 4px;
+  background-color: #ff6f97;
+  opacity: 0.8;
+  border-radius: 2px;
+  bottom: 0;
+}
+.labPage .crclmSec + .crclmSec {
+  margin-top: 200px;
+}
+.labPage .crclmSec--discrimination {
+  height: 813px;
+  background: url('@/assets/img/CurriculumPage/labPage/bg_lab_box_01.png')
+    no-repeat 0 0/1062px 813px;
+}
+.labPage .crclmSec--memory {
+  height: 812px;
+  background-color: #f3f2ff;
+  background: url('@/assets/img/CurriculumPage/labPage/bg_lab_box_02.png')
+    no-repeat 50% 0/1062px 812px;
+  padding-top: 100px;
+}
+.labPage .crclmSec--grouping {
+  height: 785px;
+  background: url('@/assets/img/CurriculumPage/labPage/bg_lab_box_03.png')
+    no-repeat 50% 0/1063px 785px;
+  padding-top: 100px;
+}
+.labPage .crclmSec--space {
+  height: 808px;
+  background: url('@/assets/img/CurriculumPage/labPage/bg_lab_box_04.png')
+    no-repeat 50% 0/1062px 808px;
+  padding-top: 80px;
+}
+.curriculumPage.labPage .crclmSec__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.58;
+  letter-spacing: -1.92px;
+  text-align: center;
+}
+.labPage .crclmSec--discrimination .crclmSec__title {
+  padding-top: 148px;
+  background: url('@/assets/img/CurriculumPage/labPage/img_lab_box_01.png')
+    no-repeat 50% 0/262px 122px;
+}
+.labPage .crclmSec--memory .crclmSec__title {
+  padding-top: 105px;
+  background: url('@/assets/img/CurriculumPage/labPage/img_lab_box_02.png')
+    no-repeat 50% 0/208px 80px;
+}
+.labPage .crclmSec--grouping .crclmSec__title {
+  padding-top: 70px;
+  background: url('@/assets/img/CurriculumPage/labPage/img_lab_box_03.png')
+    no-repeat 50% 0/207px 44px;
+}
+.labPage .crclmSec--space .crclmSec__title {
+  padding-top: 162px;
+  background: url('@/assets/img/CurriculumPage/labPage/img_lab_box_04.png')
+    no-repeat 50% 0/193px 132px;
+}
+.curriculumPage.labPage .crclmSec__title .crclmSec__titleMain .strongBox__text {
+  color: #ff6f97;
+}
+.curriculumPage.labPage .crclmSec__titleText {
+  margin-top: 23px;
+  padding-bottom: 64px;
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+  text-align: center;
+  color: #232323;
+}
+.curriculumPage.labPage .crclmSec__crclmList {
+  gap: 40px;
+}
+.curriculumPage.labPage .crclmSec__studyCard {
+  width: 293px;
+}
+.curriculumPage.labPage .crclmSec__studyCard p {
+  color: #f091ab;
+}
+/* 커리큘럼 페이지__실험실__crclmSec E */
 /* 커리큘럼 페이지__실험실 E */
 
 /* 커리큘럼 페이지__푸터 S */

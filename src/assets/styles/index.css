@@ -1592,29 +1592,22 @@ body,
   padding-top: 120px;
   box-sizing: border-box;
 }
-.labPage .crclmSec .strongBox__underline {
-  height: 4px;
-  background-color: #ff6f97;
-  opacity: 0.8;
-  border-radius: 2px;
-  bottom: 0;
-}
 .labPage .crclmSec + .crclmSec {
   margin-top: 200px;
 }
-.labPage .crclmSec--discrimination {
+.labPage .crclmSec--machine {
   height: 813px;
   background: url('@/assets/img/CurriculumPage/labPage/bg_lab_box_01.png')
     no-repeat 0 0/1062px 813px;
 }
-.labPage .crclmSec--memory {
+.labPage .crclmSec--ai {
   height: 812px;
   background-color: #f3f2ff;
   background: url('@/assets/img/CurriculumPage/labPage/bg_lab_box_02.png')
     no-repeat 50% 0/1062px 812px;
   padding-top: 100px;
 }
-.labPage .crclmSec--grouping {
+.labPage .crclmSec--environment {
   height: 785px;
   background: url('@/assets/img/CurriculumPage/labPage/bg_lab_box_03.png')
     no-repeat 50% 0/1063px 785px;
@@ -1629,21 +1622,21 @@ body,
 .curriculumPage.labPage .crclmSec__title {
   font-size: 48px;
   font-weight: 900;
-  line-height: 1.58;
+  line-height: 1.38;
   letter-spacing: -1.92px;
   text-align: center;
 }
-.labPage .crclmSec--discrimination .crclmSec__title {
+.labPage .crclmSec--machine .crclmSec__title {
   padding-top: 148px;
   background: url('@/assets/img/CurriculumPage/labPage/img_lab_box_01.png')
     no-repeat 50% 0/262px 122px;
 }
-.labPage .crclmSec--memory .crclmSec__title {
+.labPage .crclmSec--ai .crclmSec__title {
   padding-top: 105px;
   background: url('@/assets/img/CurriculumPage/labPage/img_lab_box_02.png')
     no-repeat 50% 0/208px 80px;
 }
-.labPage .crclmSec--grouping .crclmSec__title {
+.labPage .crclmSec--environment .crclmSec__title {
   padding-top: 70px;
   background: url('@/assets/img/CurriculumPage/labPage/img_lab_box_03.png')
     no-repeat 50% 0/207px 44px;
@@ -1657,8 +1650,8 @@ body,
   color: #ff6f97;
 }
 .curriculumPage.labPage .crclmSec__titleText {
-  margin-top: 23px;
-  padding-bottom: 64px;
+  margin-top: 28px;
+  padding-bottom: 65px;
   display: block;
   font-size: 32px;
   font-weight: 800;
@@ -1666,6 +1659,21 @@ body,
   letter-spacing: -1.28px;
   text-align: center;
   color: #232323;
+}
+.labPage .crclmSec__titleText strong.underline {
+  position: relative;
+  display: inline-block;
+}
+.labPage .crclmSec__titleText strong.underline::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #ff6f97;
+  opacity: 0.8;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
 }
 .curriculumPage.labPage .crclmSec__crclmList {
   gap: 40px;
